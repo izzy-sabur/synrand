@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA2832771E4D336A0021BDFA /* SynRand.component in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA36723E1E415B3C004B5F75 /* SynRand.component */; };
+		AA28327C1E4D34570021BDFA /* CAAUMIDIMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2832781E4D34570021BDFA /* CAAUMIDIMap.cpp */; };
+		AA28327D1E4D34570021BDFA /* CAAUMIDIMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2832791E4D34570021BDFA /* CAAUMIDIMap.h */; };
+		AA28327E1E4D34570021BDFA /* CAAUMIDIMapManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA28327A1E4D34570021BDFA /* CAAUMIDIMapManager.cpp */; };
+		AA28327F1E4D34570021BDFA /* CAAUMIDIMapManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA28327B1E4D34570021BDFA /* CAAUMIDIMapManager.h */; };
+		AA2832821E4D34A00021BDFA /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2832801E4D34A00021BDFA /* CAHostTimeBase.cpp */; };
+		AA2832831E4D34A00021BDFA /* CAHostTimeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2832811E4D34A00021BDFA /* CAHostTimeBase.h */; };
+		AA2832901E4D35380021BDFA /* AUMIDIBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA28328C1E4D35380021BDFA /* AUMIDIBase.cpp */; };
+		AA2832911E4D35380021BDFA /* AUMIDIBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA28328D1E4D35380021BDFA /* AUMIDIBase.h */; };
+		AA2832921E4D35380021BDFA /* MusicDeviceBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA28328E1E4D35380021BDFA /* MusicDeviceBase.cpp */; };
+		AA2832931E4D35380021BDFA /* MusicDeviceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA28328F1E4D35380021BDFA /* MusicDeviceBase.h */; };
+		AA2832951E4D354C0021BDFA /* AUMIDIDefs.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2832941E4D354C0021BDFA /* AUMIDIDefs.h */; };
+		AA2832981E4D398C0021BDFA /* CABufferList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2832961E4D398C0021BDFA /* CABufferList.cpp */; };
+		AA2832991E4D398C0021BDFA /* CABufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2832971E4D398C0021BDFA /* CABufferList.h */; };
+		AA28329C1E4D3A830021BDFA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA28329A1E4D3A830021BDFA /* CoreFoundation.framework */; };
+		AA28329D1E4D3A830021BDFA /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA28329B1E4D3A830021BDFA /* CoreMIDI.framework */; };
+		AA3672421E415B3C004B5F75 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672411E415B3C004B5F75 /* CoreAudio.framework */; };
+		AA3672441E415B3C004B5F75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672431E415B3C004B5F75 /* AudioToolbox.framework */; };
+		AA3672461E415B3C004B5F75 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672451E415B3C004B5F75 /* AudioUnit.framework */; };
+		AA3672481E415B3C004B5F75 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672471E415B3C004B5F75 /* CoreServices.framework */; };
+		AA36724A1E415B3C004B5F75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672491E415B3C004B5F75 /* Cocoa.framework */; };
+		AA36724C1E415B3C004B5F75 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA36724B1E415B3C004B5F75 /* AppKit.framework */; };
+		AA36724E1E415B3C004B5F75 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA36724D1E415B3C004B5F75 /* CoreData.framework */; };
+		AA3672501E415B3C004B5F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA36724F1E415B3C004B5F75 /* Foundation.framework */; };
+		AA3672571E415B3C004B5F75 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672471E415B3C004B5F75 /* CoreServices.framework */; };
+		AA3672581E415B3C004B5F75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672431E415B3C004B5F75 /* AudioToolbox.framework */; };
+		AA3672591E415B3C004B5F75 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672451E415B3C004B5F75 /* AudioUnit.framework */; };
+		AA36725A1E415B3C004B5F75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3672491E415B3C004B5F75 /* Cocoa.framework */; };
+		AA3672611E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA3672561E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle */; };
+		AA3672651E415B3C004B5F75 /* SynRand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672641E415B3C004B5F75 /* SynRand.cpp */; };
+		AA3672681E415B3C004B5F75 /* SynRand.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672671E415B3C004B5F75 /* SynRand.h */; };
+		AA36726A1E415B3C004B5F75 /* SynRand.r in Rez */ = {isa = PBXBuildFile; fileRef = AA3672691E415B3C004B5F75 /* SynRand.r */; };
+		AA36726C1E415B3C004B5F75 /* SynRandVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36726B1E415B3C004B5F75 /* SynRandVersion.h */; };
+		AA36726E1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36726D1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h */; };
+		AA3672701E415B3C004B5F75 /* SynRand_CocoaViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AA36726F1E415B3C004B5F75 /* SynRand_CocoaViewFactory.m */; };
+		AA3672721E415B3C004B5F75 /* SynRand_CocoaView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672711E415B3C004B5F75 /* SynRand_CocoaView.h */; };
+		AA3672741E415B3C004B5F75 /* SynRand_CocoaView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */; };
+		AA3672761E415B3C004B5F75 /* SynRand_CocoaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3672751E415B3C004B5F75 /* SynRand_CocoaView.xib */; };
+		AA36727B1E415B3C004B5F75 /* AUBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA36727A1E415B3C004B5F75 /* AUBase.cpp */; };
+		AA36727D1E415B3C004B5F75 /* AUBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36727C1E415B3C004B5F75 /* AUBase.h */; };
+		AA3672831E415B3C004B5F75 /* AUInputElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672821E415B3C004B5F75 /* AUInputElement.cpp */; };
+		AA3672851E415B3C004B5F75 /* AUInputElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672841E415B3C004B5F75 /* AUInputElement.h */; };
+		AA3672871E415B3C004B5F75 /* AUOutputElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672861E415B3C004B5F75 /* AUOutputElement.cpp */; };
+		AA3672891E415B3C004B5F75 /* AUOutputElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672881E415B3C004B5F75 /* AUOutputElement.h */; };
+		AA36728B1E415B3C004B5F75 /* AUPluginDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA36728A1E415B3C004B5F75 /* AUPluginDispatch.cpp */; };
+		AA36728D1E415B3C004B5F75 /* AUPluginDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36728C1E415B3C004B5F75 /* AUPluginDispatch.h */; };
+		AA3672901E415B3C004B5F75 /* AUScopeElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA36728F1E415B3C004B5F75 /* AUScopeElement.cpp */; };
+		AA3672921E415B3C004B5F75 /* AUScopeElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672911E415B3C004B5F75 /* AUScopeElement.h */; };
+		AA3672941E415B3C004B5F75 /* ComponentBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672931E415B3C004B5F75 /* ComponentBase.cpp */; };
+		AA3672961E415B3C004B5F75 /* ComponentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672951E415B3C004B5F75 /* ComponentBase.h */; };
+		AA3672991E415B3C004B5F75 /* AUEffectBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672981E415B3C004B5F75 /* AUEffectBase.cpp */; };
+		AA36729B1E415B3C004B5F75 /* AUEffectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36729A1E415B3C004B5F75 /* AUEffectBase.h */; };
+		AA36729E1E415B3C004B5F75 /* AUBaseHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA36729D1E415B3C004B5F75 /* AUBaseHelper.cpp */; };
+		AA3672A01E415B3C004B5F75 /* AUBaseHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36729F1E415B3C004B5F75 /* AUBaseHelper.h */; };
+		AA3672A21E415B3C004B5F75 /* AUBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672A11E415B3C004B5F75 /* AUBuffer.cpp */; };
+		AA3672A41E415B3C004B5F75 /* AUBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672A31E415B3C004B5F75 /* AUBuffer.h */; };
+		AA3672A61E415B3C004B5F75 /* AUInputFormatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672A51E415B3C004B5F75 /* AUInputFormatConverter.h */; };
+		AA3672A81E415B3C004B5F75 /* AUSilentTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672A71E415B3C004B5F75 /* AUSilentTimeout.h */; };
+		AA3672AA1E415B3C004B5F75 /* AUTimestampGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672A91E415B3C004B5F75 /* AUTimestampGenerator.h */; };
+		AA3672AD1E415B3C004B5F75 /* CAAudioChannelLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672AC1E415B3C004B5F75 /* CAAudioChannelLayout.cpp */; };
+		AA3672AF1E415B3C004B5F75 /* CAAudioChannelLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672AE1E415B3C004B5F75 /* CAAudioChannelLayout.h */; };
+		AA3672B11E415B3C004B5F75 /* CAAUParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672B01E415B3C004B5F75 /* CAAUParameter.h */; };
+		AA3672B31E415B3C004B5F75 /* CAAUParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672B21E415B3C004B5F75 /* CAAUParameter.cpp */; };
+		AA3672B51E415B3C004B5F75 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672B41E415B3C004B5F75 /* CAMutex.cpp */; };
+		AA3672B71E415B3C004B5F75 /* CAMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672B61E415B3C004B5F75 /* CAMutex.h */; };
+		AA3672B91E415B3C004B5F75 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672B81E415B3C004B5F75 /* CAStreamBasicDescription.cpp */; };
+		AA3672BB1E415B3C004B5F75 /* CAStreamBasicDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672BA1E415B3C004B5F75 /* CAStreamBasicDescription.h */; };
+		AA3672BD1E415B3C004B5F75 /* CAVectorUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672BC1E415B3C004B5F75 /* CAVectorUnit.cpp */; };
+		AA3672BF1E415B3C004B5F75 /* CAVectorUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672BE1E415B3C004B5F75 /* CAVectorUnit.h */; };
+		AA3672C11E415B3C004B5F75 /* CAVectorUnitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672C01E415B3C004B5F75 /* CAVectorUnitTypes.h */; };
+		AA3672D61E415C80004B5F75 /* AUInstrumentBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672CB1E415C80004B5F75 /* AUInstrumentBase.cpp */; };
+		AA3672D71E415C80004B5F75 /* AUInstrumentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672CC1E415C80004B5F75 /* AUInstrumentBase.h */; };
+		AA3672D81E415C80004B5F75 /* LockFreeFIFO.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672CD1E415C80004B5F75 /* LockFreeFIFO.h */; };
+		AA3672D91E415C80004B5F75 /* MIDIControlHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672CE1E415C80004B5F75 /* MIDIControlHandler.h */; };
+		AA3672DA1E415C80004B5F75 /* SynthElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672CF1E415C80004B5F75 /* SynthElement.cpp */; };
+		AA3672DB1E415C80004B5F75 /* SynthElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672D01E415C80004B5F75 /* SynthElement.h */; };
+		AA3672DC1E415C80004B5F75 /* SynthEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672D11E415C80004B5F75 /* SynthEvent.h */; };
+		AA3672DD1E415C80004B5F75 /* SynthNote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672D21E415C80004B5F75 /* SynthNote.cpp */; };
+		AA3672DE1E415C80004B5F75 /* SynthNote.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672D31E415C80004B5F75 /* SynthNote.h */; };
+		AA3672DF1E415C80004B5F75 /* SynthNoteList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA3672D41E415C80004B5F75 /* SynthNoteList.cpp */; };
+		AA3672E01E415C80004B5F75 /* SynthNoteList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672D51E415C80004B5F75 /* SynthNoteList.h */; };
+		AA8CD4F51E5D04DC00FAA162 /* SynRandUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */; };
+		AA8CD4F61E5D04DC00FAA162 /* SynRandUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA36725F1E415B3C004B5F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3672341E415B3C004B5F75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3672551E415B3C004B5F75;
+			remoteInfo = SynRand_CocoaViewFactory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA2832761E4D33330021BDFA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/Users/penguin/Library/Audio/Plug-Ins/Components";
+			dstSubfolderSpec = 0;
+			files = (
+				AA2832771E4D336A0021BDFA /* SynRand.component in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA2832781E4D34570021BDFA /* CAAUMIDIMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAAUMIDIMap.cpp; path = CoreAudio/PublicUtility/CAAUMIDIMap.cpp; sourceTree = SOURCE_ROOT; };
+		AA2832791E4D34570021BDFA /* CAAUMIDIMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAAUMIDIMap.h; path = CoreAudio/PublicUtility/CAAUMIDIMap.h; sourceTree = SOURCE_ROOT; };
+		AA28327A1E4D34570021BDFA /* CAAUMIDIMapManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAAUMIDIMapManager.cpp; path = CoreAudio/PublicUtility/CAAUMIDIMapManager.cpp; sourceTree = SOURCE_ROOT; };
+		AA28327B1E4D34570021BDFA /* CAAUMIDIMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAAUMIDIMapManager.h; path = CoreAudio/PublicUtility/CAAUMIDIMapManager.h; sourceTree = SOURCE_ROOT; };
+		AA2832801E4D34A00021BDFA /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CAHostTimeBase.cpp; path = CoreAudio/PublicUtility/CAHostTimeBase.cpp; sourceTree = SOURCE_ROOT; };
+		AA2832811E4D34A00021BDFA /* CAHostTimeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CAHostTimeBase.h; path = CoreAudio/PublicUtility/CAHostTimeBase.h; sourceTree = SOURCE_ROOT; };
+		AA28328C1E4D35380021BDFA /* AUMIDIBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AUMIDIBase.cpp; sourceTree = "<group>"; };
+		AA28328D1E4D35380021BDFA /* AUMIDIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUMIDIBase.h; sourceTree = "<group>"; };
+		AA28328E1E4D35380021BDFA /* MusicDeviceBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MusicDeviceBase.cpp; sourceTree = "<group>"; };
+		AA28328F1E4D35380021BDFA /* MusicDeviceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDeviceBase.h; sourceTree = "<group>"; };
+		AA2832941E4D354C0021BDFA /* AUMIDIDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUMIDIDefs.h; sourceTree = "<group>"; };
+		AA2832961E4D398C0021BDFA /* CABufferList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CABufferList.cpp; sourceTree = "<group>"; };
+		AA2832971E4D398C0021BDFA /* CABufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABufferList.h; sourceTree = "<group>"; };
+		AA28329A1E4D3A830021BDFA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		AA28329B1E4D3A830021BDFA /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = ../../../../../../System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<group>"; };
+		AA36723E1E415B3C004B5F75 /* SynRand.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynRand.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3672411E415B3C004B5F75 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		AA3672431E415B3C004B5F75 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		AA3672451E415B3C004B5F75 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		AA3672471E415B3C004B5F75 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		AA3672491E415B3C004B5F75 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		AA36724B1E415B3C004B5F75 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		AA36724D1E415B3C004B5F75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		AA36724F1E415B3C004B5F75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		AA3672561E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynRand_CocoaViewFactory.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA36725C1E415B3C004B5F75 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		AA36725D1E415B3C004B5F75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		AA36725E1E415B3C004B5F75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		AA3672631E415B3C004B5F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3672641E415B3C004B5F75 /* SynRand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SynRand.cpp; sourceTree = "<group>"; };
+		AA3672661E415B3C004B5F75 /* SynRand.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = SynRand.exp; sourceTree = "<group>"; };
+		AA3672671E415B3C004B5F75 /* SynRand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand.h; sourceTree = "<group>"; };
+		AA3672691E415B3C004B5F75 /* SynRand.r */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.rez; path = SynRand.r; sourceTree = "<group>"; };
+		AA36726B1E415B3C004B5F75 /* SynRandVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRandVersion.h; sourceTree = "<group>"; };
+		AA36726D1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand_CocoaViewFactory.h; sourceTree = "<group>"; };
+		AA36726F1E415B3C004B5F75 /* SynRand_CocoaViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynRand_CocoaViewFactory.m; sourceTree = "<group>"; };
+		AA3672711E415B3C004B5F75 /* SynRand_CocoaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand_CocoaView.h; sourceTree = "<group>"; };
+		AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynRand_CocoaView.m; sourceTree = "<group>"; };
+		AA3672751E415B3C004B5F75 /* SynRand_CocoaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynRand_CocoaView.xib; sourceTree = "<group>"; };
+		AA3672771E415B3C004B5F75 /* SynRand_CocoaViewFactory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynRand_CocoaViewFactory-Info.plist"; sourceTree = "<group>"; };
+		AA36727A1E415B3C004B5F75 /* AUBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUBase.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUBase.cpp; sourceTree = SOURCE_ROOT; };
+		AA36727C1E415B3C004B5F75 /* AUBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUBase.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUBase.h; sourceTree = SOURCE_ROOT; };
+		AA3672821E415B3C004B5F75 /* AUInputElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUInputElement.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUInputElement.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672841E415B3C004B5F75 /* AUInputElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUInputElement.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUInputElement.h; sourceTree = SOURCE_ROOT; };
+		AA3672861E415B3C004B5F75 /* AUOutputElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUOutputElement.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUOutputElement.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672881E415B3C004B5F75 /* AUOutputElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUOutputElement.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUOutputElement.h; sourceTree = SOURCE_ROOT; };
+		AA36728A1E415B3C004B5F75 /* AUPluginDispatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUPluginDispatch.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUPluginDispatch.cpp; sourceTree = SOURCE_ROOT; };
+		AA36728C1E415B3C004B5F75 /* AUPluginDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUPluginDispatch.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUPluginDispatch.h; sourceTree = SOURCE_ROOT; };
+		AA36728E1E415B3C004B5F75 /* AUResources.r */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.rez; name = AUResources.r; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUResources.r; sourceTree = SOURCE_ROOT; };
+		AA36728F1E415B3C004B5F75 /* AUScopeElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUScopeElement.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUScopeElement.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672911E415B3C004B5F75 /* AUScopeElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUScopeElement.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUScopeElement.h; sourceTree = SOURCE_ROOT; };
+		AA3672931E415B3C004B5F75 /* ComponentBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ComponentBase.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/ComponentBase.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672951E415B3C004B5F75 /* ComponentBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ComponentBase.h; path = CoreAudio/AudioUnits/AUPublic/AUBase/ComponentBase.h; sourceTree = SOURCE_ROOT; };
+		AA3672981E415B3C004B5F75 /* AUEffectBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUEffectBase.cpp; path = CoreAudio/AudioUnits/AUPublic/OtherBases/AUEffectBase.cpp; sourceTree = SOURCE_ROOT; };
+		AA36729A1E415B3C004B5F75 /* AUEffectBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUEffectBase.h; path = CoreAudio/AudioUnits/AUPublic/OtherBases/AUEffectBase.h; sourceTree = SOURCE_ROOT; };
+		AA36729D1E415B3C004B5F75 /* AUBaseHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUBaseHelper.cpp; path = CoreAudio/AudioUnits/AUPublic/Utility/AUBaseHelper.cpp; sourceTree = SOURCE_ROOT; };
+		AA36729F1E415B3C004B5F75 /* AUBaseHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUBaseHelper.h; path = CoreAudio/AudioUnits/AUPublic/Utility/AUBaseHelper.h; sourceTree = SOURCE_ROOT; };
+		AA3672A11E415B3C004B5F75 /* AUBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUBuffer.cpp; path = CoreAudio/AudioUnits/AUPublic/Utility/AUBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672A31E415B3C004B5F75 /* AUBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUBuffer.h; path = CoreAudio/AudioUnits/AUPublic/Utility/AUBuffer.h; sourceTree = SOURCE_ROOT; };
+		AA3672A51E415B3C004B5F75 /* AUInputFormatConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUInputFormatConverter.h; path = CoreAudio/AudioUnits/AUPublic/Utility/AUInputFormatConverter.h; sourceTree = SOURCE_ROOT; };
+		AA3672A71E415B3C004B5F75 /* AUSilentTimeout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUSilentTimeout.h; path = CoreAudio/AudioUnits/AUPublic/Utility/AUSilentTimeout.h; sourceTree = SOURCE_ROOT; };
+		AA3672A91E415B3C004B5F75 /* AUTimestampGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AUTimestampGenerator.h; path = CoreAudio/AudioUnits/AUPublic/Utility/AUTimestampGenerator.h; sourceTree = SOURCE_ROOT; };
+		AA3672AC1E415B3C004B5F75 /* CAAudioChannelLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAAudioChannelLayout.cpp; path = CoreAudio/PublicUtility/CAAudioChannelLayout.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672AE1E415B3C004B5F75 /* CAAudioChannelLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAAudioChannelLayout.h; path = CoreAudio/PublicUtility/CAAudioChannelLayout.h; sourceTree = SOURCE_ROOT; };
+		AA3672B01E415B3C004B5F75 /* CAAUParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAAUParameter.h; path = CoreAudio/PublicUtility/CAAUParameter.h; sourceTree = SOURCE_ROOT; };
+		AA3672B21E415B3C004B5F75 /* CAAUParameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAAUParameter.cpp; path = CoreAudio/PublicUtility/CAAUParameter.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672B41E415B3C004B5F75 /* CAMutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAMutex.cpp; path = CoreAudio/PublicUtility/CAMutex.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672B61E415B3C004B5F75 /* CAMutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAMutex.h; path = CoreAudio/PublicUtility/CAMutex.h; sourceTree = SOURCE_ROOT; };
+		AA3672B81E415B3C004B5F75 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAStreamBasicDescription.cpp; path = CoreAudio/PublicUtility/CAStreamBasicDescription.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672BA1E415B3C004B5F75 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAStreamBasicDescription.h; path = CoreAudio/PublicUtility/CAStreamBasicDescription.h; sourceTree = SOURCE_ROOT; };
+		AA3672BC1E415B3C004B5F75 /* CAVectorUnit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CAVectorUnit.cpp; path = CoreAudio/PublicUtility/CAVectorUnit.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672BE1E415B3C004B5F75 /* CAVectorUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAVectorUnit.h; path = CoreAudio/PublicUtility/CAVectorUnit.h; sourceTree = SOURCE_ROOT; };
+		AA3672C01E415B3C004B5F75 /* CAVectorUnitTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CAVectorUnitTypes.h; path = CoreAudio/PublicUtility/CAVectorUnitTypes.h; sourceTree = SOURCE_ROOT; };
+		AA3672CB1E415C80004B5F75 /* AUInstrumentBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AUInstrumentBase.cpp; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/AUInstrumentBase.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672CC1E415C80004B5F75 /* AUInstrumentBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUInstrumentBase.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/AUInstrumentBase.h; sourceTree = SOURCE_ROOT; };
+		AA3672CD1E415C80004B5F75 /* LockFreeFIFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LockFreeFIFO.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/LockFreeFIFO.h; sourceTree = SOURCE_ROOT; };
+		AA3672CE1E415C80004B5F75 /* MIDIControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIControlHandler.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/MIDIControlHandler.h; sourceTree = SOURCE_ROOT; };
+		AA3672CF1E415C80004B5F75 /* SynthElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthElement.cpp; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthElement.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672D01E415C80004B5F75 /* SynthElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthElement.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthElement.h; sourceTree = SOURCE_ROOT; };
+		AA3672D11E415C80004B5F75 /* SynthEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthEvent.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthEvent.h; sourceTree = SOURCE_ROOT; };
+		AA3672D21E415C80004B5F75 /* SynthNote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthNote.cpp; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNote.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672D31E415C80004B5F75 /* SynthNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthNote.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNote.h; sourceTree = SOURCE_ROOT; };
+		AA3672D41E415C80004B5F75 /* SynthNoteList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthNoteList.cpp; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNoteList.cpp; sourceTree = SOURCE_ROOT; };
+		AA3672D51E415C80004B5F75 /* SynthNoteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthNoteList.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNoteList.h; sourceTree = SOURCE_ROOT; };
+		AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynRandUtil.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3672391E415B3C004B5F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3672421E415B3C004B5F75 /* CoreAudio.framework in Frameworks */,
+				AA36724A1E415B3C004B5F75 /* Cocoa.framework in Frameworks */,
+				AA28329C1E4D3A830021BDFA /* CoreFoundation.framework in Frameworks */,
+				AA36724E1E415B3C004B5F75 /* CoreData.framework in Frameworks */,
+				AA28329D1E4D3A830021BDFA /* CoreMIDI.framework in Frameworks */,
+				AA3672441E415B3C004B5F75 /* AudioToolbox.framework in Frameworks */,
+				AA36724C1E415B3C004B5F75 /* AppKit.framework in Frameworks */,
+				AA3672461E415B3C004B5F75 /* AudioUnit.framework in Frameworks */,
+				AA3672481E415B3C004B5F75 /* CoreServices.framework in Frameworks */,
+				AA3672501E415B3C004B5F75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3672521E415B3C004B5F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA36725A1E415B3C004B5F75 /* Cocoa.framework in Frameworks */,
+				AA3672571E415B3C004B5F75 /* CoreServices.framework in Frameworks */,
+				AA3672581E415B3C004B5F75 /* AudioToolbox.framework in Frameworks */,
+				AA3672591E415B3C004B5F75 /* AudioUnit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3672331E415B3C004B5F75 = {
+			isa = PBXGroup;
+			children = (
+				AA3672621E415B3C004B5F75 /* SynRand */,
+				AA3672401E415B3C004B5F75 /* Frameworks */,
+				AA36723F1E415B3C004B5F75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA36723F1E415B3C004B5F75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA36723E1E415B3C004B5F75 /* SynRand.component */,
+				AA3672561E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3672401E415B3C004B5F75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA28329A1E4D3A830021BDFA /* CoreFoundation.framework */,
+				AA28329B1E4D3A830021BDFA /* CoreMIDI.framework */,
+				AA3672411E415B3C004B5F75 /* CoreAudio.framework */,
+				AA3672431E415B3C004B5F75 /* AudioToolbox.framework */,
+				AA3672451E415B3C004B5F75 /* AudioUnit.framework */,
+				AA3672471E415B3C004B5F75 /* CoreServices.framework */,
+				AA3672491E415B3C004B5F75 /* Cocoa.framework */,
+				AA36724B1E415B3C004B5F75 /* AppKit.framework */,
+				AA36724D1E415B3C004B5F75 /* CoreData.framework */,
+				AA36724F1E415B3C004B5F75 /* Foundation.framework */,
+				AA36725B1E415B3C004B5F75 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA36725B1E415B3C004B5F75 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA36725C1E415B3C004B5F75 /* AppKit.framework */,
+				AA36725D1E415B3C004B5F75 /* CoreData.framework */,
+				AA36725E1E415B3C004B5F75 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AA3672621E415B3C004B5F75 /* SynRand */ = {
+			isa = PBXGroup;
+			children = (
+				AA3672631E415B3C004B5F75 /* Info.plist */,
+				AA3672641E415B3C004B5F75 /* SynRand.cpp */,
+				AA3672661E415B3C004B5F75 /* SynRand.exp */,
+				AA3672671E415B3C004B5F75 /* SynRand.h */,
+				AA3672691E415B3C004B5F75 /* SynRand.r */,
+				AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */,
+				AA36726B1E415B3C004B5F75 /* SynRandVersion.h */,
+				AA36726D1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h */,
+				AA36726F1E415B3C004B5F75 /* SynRand_CocoaViewFactory.m */,
+				AA3672711E415B3C004B5F75 /* SynRand_CocoaView.h */,
+				AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */,
+				AA3672751E415B3C004B5F75 /* SynRand_CocoaView.xib */,
+				AA3672771E415B3C004B5F75 /* SynRand_CocoaViewFactory-Info.plist */,
+				AA3672781E415B3C004B5F75 /* CoreAudio/AudioUnits/AUPublic/ */,
+				AA3672AB1E415B3C004B5F75 /* CoreAudio/PublicUtility */,
+			);
+			path = SynRand;
+			sourceTree = "<group>";
+		};
+		AA3672781E415B3C004B5F75 /* CoreAudio/AudioUnits/AUPublic/ */ = {
+			isa = PBXGroup;
+			children = (
+				AA3672CA1E415C4C004B5F75 /* AUInstrumentBase */,
+				AA3672791E415B3C004B5F75 /* AUBase */,
+				AA3672971E415B3C004B5F75 /* OtherBases */,
+				AA36729C1E415B3C004B5F75 /* Utility */,
+			);
+			name = CoreAudio/AudioUnits/AUPublic/;
+			path = SynRand;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA3672791E415B3C004B5F75 /* AUBase */ = {
+			isa = PBXGroup;
+			children = (
+				AA36727A1E415B3C004B5F75 /* AUBase.cpp */,
+				AA36727C1E415B3C004B5F75 /* AUBase.h */,
+				AA3672821E415B3C004B5F75 /* AUInputElement.cpp */,
+				AA3672841E415B3C004B5F75 /* AUInputElement.h */,
+				AA3672861E415B3C004B5F75 /* AUOutputElement.cpp */,
+				AA3672881E415B3C004B5F75 /* AUOutputElement.h */,
+				AA36728A1E415B3C004B5F75 /* AUPluginDispatch.cpp */,
+				AA36728C1E415B3C004B5F75 /* AUPluginDispatch.h */,
+				AA36728E1E415B3C004B5F75 /* AUResources.r */,
+				AA36728F1E415B3C004B5F75 /* AUScopeElement.cpp */,
+				AA3672911E415B3C004B5F75 /* AUScopeElement.h */,
+				AA3672931E415B3C004B5F75 /* ComponentBase.cpp */,
+				AA3672951E415B3C004B5F75 /* ComponentBase.h */,
+			);
+			name = AUBase;
+			path = CoreAudio/AudioUnits/AUPublic/AUBase;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA3672971E415B3C004B5F75 /* OtherBases */ = {
+			isa = PBXGroup;
+			children = (
+				AA28328C1E4D35380021BDFA /* AUMIDIBase.cpp */,
+				AA28328D1E4D35380021BDFA /* AUMIDIBase.h */,
+				AA28328E1E4D35380021BDFA /* MusicDeviceBase.cpp */,
+				AA28328F1E4D35380021BDFA /* MusicDeviceBase.h */,
+				AA3672981E415B3C004B5F75 /* AUEffectBase.cpp */,
+				AA36729A1E415B3C004B5F75 /* AUEffectBase.h */,
+			);
+			name = OtherBases;
+			path = CoreAudio/AudioUnits/AUPublic/OtherBases;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA36729C1E415B3C004B5F75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AA2832941E4D354C0021BDFA /* AUMIDIDefs.h */,
+				AA36729D1E415B3C004B5F75 /* AUBaseHelper.cpp */,
+				AA36729F1E415B3C004B5F75 /* AUBaseHelper.h */,
+				AA3672A11E415B3C004B5F75 /* AUBuffer.cpp */,
+				AA3672A31E415B3C004B5F75 /* AUBuffer.h */,
+				AA3672A51E415B3C004B5F75 /* AUInputFormatConverter.h */,
+				AA3672A71E415B3C004B5F75 /* AUSilentTimeout.h */,
+				AA3672A91E415B3C004B5F75 /* AUTimestampGenerator.h */,
+			);
+			name = Utility;
+			path = CoreAudio/AudioUnits/AUPublic/Utility;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA3672AB1E415B3C004B5F75 /* CoreAudio/PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				AA2832961E4D398C0021BDFA /* CABufferList.cpp */,
+				AA2832971E4D398C0021BDFA /* CABufferList.h */,
+				AA2832781E4D34570021BDFA /* CAAUMIDIMap.cpp */,
+				AA2832791E4D34570021BDFA /* CAAUMIDIMap.h */,
+				AA28327A1E4D34570021BDFA /* CAAUMIDIMapManager.cpp */,
+				AA28327B1E4D34570021BDFA /* CAAUMIDIMapManager.h */,
+				AA2832801E4D34A00021BDFA /* CAHostTimeBase.cpp */,
+				AA2832811E4D34A00021BDFA /* CAHostTimeBase.h */,
+				AA3672AC1E415B3C004B5F75 /* CAAudioChannelLayout.cpp */,
+				AA3672AE1E415B3C004B5F75 /* CAAudioChannelLayout.h */,
+				AA3672B01E415B3C004B5F75 /* CAAUParameter.h */,
+				AA3672B21E415B3C004B5F75 /* CAAUParameter.cpp */,
+				AA3672B41E415B3C004B5F75 /* CAMutex.cpp */,
+				AA3672B61E415B3C004B5F75 /* CAMutex.h */,
+				AA3672B81E415B3C004B5F75 /* CAStreamBasicDescription.cpp */,
+				AA3672BA1E415B3C004B5F75 /* CAStreamBasicDescription.h */,
+				AA3672BC1E415B3C004B5F75 /* CAVectorUnit.cpp */,
+				AA3672BE1E415B3C004B5F75 /* CAVectorUnit.h */,
+				AA3672C01E415B3C004B5F75 /* CAVectorUnitTypes.h */,
+			);
+			path = CoreAudio/PublicUtility;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA3672CA1E415C4C004B5F75 /* AUInstrumentBase */ = {
+			isa = PBXGroup;
+			children = (
+				AA3672CB1E415C80004B5F75 /* AUInstrumentBase.cpp */,
+				AA3672CC1E415C80004B5F75 /* AUInstrumentBase.h */,
+				AA3672CD1E415C80004B5F75 /* LockFreeFIFO.h */,
+				AA3672CE1E415C80004B5F75 /* MIDIControlHandler.h */,
+				AA3672CF1E415C80004B5F75 /* SynthElement.cpp */,
+				AA3672D01E415C80004B5F75 /* SynthElement.h */,
+				AA3672D11E415C80004B5F75 /* SynthEvent.h */,
+				AA3672D21E415C80004B5F75 /* SynthNote.cpp */,
+				AA3672D31E415C80004B5F75 /* SynthNote.h */,
+				AA3672D41E415C80004B5F75 /* SynthNoteList.cpp */,
+				AA3672D51E415C80004B5F75 /* SynthNoteList.h */,
+			);
+			name = AUInstrumentBase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA36723A1E415B3C004B5F75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3672D81E415C80004B5F75 /* LockFreeFIFO.h in Headers */,
+				AA3672A01E415B3C004B5F75 /* AUBaseHelper.h in Headers */,
+				AA8CD4F51E5D04DC00FAA162 /* SynRandUtil.h in Headers */,
+				AA3672A81E415B3C004B5F75 /* AUSilentTimeout.h in Headers */,
+				AA3672921E415B3C004B5F75 /* AUScopeElement.h in Headers */,
+				AA3672A61E415B3C004B5F75 /* AUInputFormatConverter.h in Headers */,
+				AA3672961E415B3C004B5F75 /* ComponentBase.h in Headers */,
+				AA36727D1E415B3C004B5F75 /* AUBase.h in Headers */,
+				AA36729B1E415B3C004B5F75 /* AUEffectBase.h in Headers */,
+				AA3672D71E415C80004B5F75 /* AUInstrumentBase.h in Headers */,
+				AA3672681E415B3C004B5F75 /* SynRand.h in Headers */,
+				AA3672AF1E415B3C004B5F75 /* CAAudioChannelLayout.h in Headers */,
+				AA3672D91E415C80004B5F75 /* MIDIControlHandler.h in Headers */,
+				AA3672BB1E415B3C004B5F75 /* CAStreamBasicDescription.h in Headers */,
+				AA3672AA1E415B3C004B5F75 /* AUTimestampGenerator.h in Headers */,
+				AA3672851E415B3C004B5F75 /* AUInputElement.h in Headers */,
+				AA3672DC1E415C80004B5F75 /* SynthEvent.h in Headers */,
+				AA2832831E4D34A00021BDFA /* CAHostTimeBase.h in Headers */,
+				AA28327D1E4D34570021BDFA /* CAAUMIDIMap.h in Headers */,
+				AA3672E01E415C80004B5F75 /* SynthNoteList.h in Headers */,
+				AA3672B71E415B3C004B5F75 /* CAMutex.h in Headers */,
+				AA3672A41E415B3C004B5F75 /* AUBuffer.h in Headers */,
+				AA2832911E4D35380021BDFA /* AUMIDIBase.h in Headers */,
+				AA3672BF1E415B3C004B5F75 /* CAVectorUnit.h in Headers */,
+				AA2832991E4D398C0021BDFA /* CABufferList.h in Headers */,
+				AA28327F1E4D34570021BDFA /* CAAUMIDIMapManager.h in Headers */,
+				AA2832951E4D354C0021BDFA /* AUMIDIDefs.h in Headers */,
+				AA3672891E415B3C004B5F75 /* AUOutputElement.h in Headers */,
+				AA3672DE1E415C80004B5F75 /* SynthNote.h in Headers */,
+				AA36726C1E415B3C004B5F75 /* SynRandVersion.h in Headers */,
+				AA3672DB1E415C80004B5F75 /* SynthElement.h in Headers */,
+				AA2832931E4D35380021BDFA /* MusicDeviceBase.h in Headers */,
+				AA36728D1E415B3C004B5F75 /* AUPluginDispatch.h in Headers */,
+				AA3672B11E415B3C004B5F75 /* CAAUParameter.h in Headers */,
+				AA3672C11E415B3C004B5F75 /* CAVectorUnitTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3672531E415B3C004B5F75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8CD4F61E5D04DC00FAA162 /* SynRandUtil.h in Headers */,
+				AA36726E1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h in Headers */,
+				AA3672721E415B3C004B5F75 /* SynRand_CocoaView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA36723D1E415B3C004B5F75 /* SynRand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3672C71E415B3C004B5F75 /* Build configuration list for PBXNativeTarget "SynRand" */;
+			buildPhases = (
+				AA3672381E415B3C004B5F75 /* Sources */,
+				AA3672391E415B3C004B5F75 /* Frameworks */,
+				AA36723A1E415B3C004B5F75 /* Headers */,
+				AA36723B1E415B3C004B5F75 /* Rez */,
+				AA36723C1E415B3C004B5F75 /* Resources */,
+				AA2832761E4D33330021BDFA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3672601E415B3C004B5F75 /* PBXTargetDependency */,
+			);
+			name = SynRand;
+			productName = SynRand;
+			productReference = AA36723E1E415B3C004B5F75 /* SynRand.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+		AA3672551E415B3C004B5F75 /* SynRand_CocoaViewFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3672C41E415B3C004B5F75 /* Build configuration list for PBXNativeTarget "SynRand_CocoaViewFactory" */;
+			buildPhases = (
+				AA3672511E415B3C004B5F75 /* Sources */,
+				AA3672521E415B3C004B5F75 /* Frameworks */,
+				AA3672531E415B3C004B5F75 /* Headers */,
+				AA3672541E415B3C004B5F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynRand_CocoaViewFactory;
+			productName = SynRand_CocoaViewFactory;
+			productReference = AA3672561E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3672341E415B3C004B5F75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Penguin;
+				TargetAttributes = {
+					AA36723D1E415B3C004B5F75 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AA3672551E415B3C004B5F75 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = AA3672371E415B3C004B5F75 /* Build configuration list for PBXProject "SynRand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA3672331E415B3C004B5F75;
+			productRefGroup = AA36723F1E415B3C004B5F75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA36723D1E415B3C004B5F75 /* SynRand */,
+				AA3672551E415B3C004B5F75 /* SynRand_CocoaViewFactory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA36723C1E415B3C004B5F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3672611E415B3C004B5F75 /* SynRand_CocoaViewFactory.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3672541E415B3C004B5F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3672761E415B3C004B5F75 /* SynRand_CocoaView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		AA36723B1E415B3C004B5F75 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA36726A1E415B3C004B5F75 /* SynRand.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3672381E415B3C004B5F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA36729E1E415B3C004B5F75 /* AUBaseHelper.cpp in Sources */,
+				AA3672941E415B3C004B5F75 /* ComponentBase.cpp in Sources */,
+				AA36727B1E415B3C004B5F75 /* AUBase.cpp in Sources */,
+				AA2832921E4D35380021BDFA /* MusicDeviceBase.cpp in Sources */,
+				AA3672991E415B3C004B5F75 /* AUEffectBase.cpp in Sources */,
+				AA3672A21E415B3C004B5F75 /* AUBuffer.cpp in Sources */,
+				AA3672B31E415B3C004B5F75 /* CAAUParameter.cpp in Sources */,
+				AA3672901E415B3C004B5F75 /* AUScopeElement.cpp in Sources */,
+				AA3672DD1E415C80004B5F75 /* SynthNote.cpp in Sources */,
+				AA3672BD1E415B3C004B5F75 /* CAVectorUnit.cpp in Sources */,
+				AA36728B1E415B3C004B5F75 /* AUPluginDispatch.cpp in Sources */,
+				AA2832901E4D35380021BDFA /* AUMIDIBase.cpp in Sources */,
+				AA28327C1E4D34570021BDFA /* CAAUMIDIMap.cpp in Sources */,
+				AA3672871E415B3C004B5F75 /* AUOutputElement.cpp in Sources */,
+				AA3672651E415B3C004B5F75 /* SynRand.cpp in Sources */,
+				AA3672AD1E415B3C004B5F75 /* CAAudioChannelLayout.cpp in Sources */,
+				AA3672DF1E415C80004B5F75 /* SynthNoteList.cpp in Sources */,
+				AA3672DA1E415C80004B5F75 /* SynthElement.cpp in Sources */,
+				AA3672831E415B3C004B5F75 /* AUInputElement.cpp in Sources */,
+				AA3672B51E415B3C004B5F75 /* CAMutex.cpp in Sources */,
+				AA3672D61E415C80004B5F75 /* AUInstrumentBase.cpp in Sources */,
+				AA3672B91E415B3C004B5F75 /* CAStreamBasicDescription.cpp in Sources */,
+				AA2832981E4D398C0021BDFA /* CABufferList.cpp in Sources */,
+				AA28327E1E4D34570021BDFA /* CAAUMIDIMapManager.cpp in Sources */,
+				AA2832821E4D34A00021BDFA /* CAHostTimeBase.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3672511E415B3C004B5F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3672741E415B3C004B5F75 /* SynRand_CocoaView.m in Sources */,
+				AA3672701E415B3C004B5F75 /* SynRand_CocoaViewFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA3672601E415B3C004B5F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3672551E415B3C004B5F75 /* SynRand_CocoaViewFactory */;
+			targetProxy = AA36725F1E415B3C004B5F75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA3672C21E415B3C004B5F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		AA3672C31E415B3C004B5F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		AA3672C51E415B3C004B5F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "SynRand/SynRand_CocoaViewFactory-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = SynRand_CocoaViewFactory;
+			};
+			name = Debug;
+		};
+		AA3672C61E415B3C004B5F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SynRand/SynRand_CocoaViewFactory-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = SynRand_CocoaViewFactory;
+			};
+			name = Release;
+		};
+		AA3672C81E415B3C004B5F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				EXPORTED_SYMBOLS_FILE = SynRand/SynRand.exp;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CA_USE_AUDIO_PLUGIN_ONLY,
+					"DEBUG=1",
+				);
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = SynRand/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "-DCA_AUTO_MIDI_MAP=1";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/CoreAudio/**”";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		AA3672C91E415B3C004B5F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				EXPORTED_SYMBOLS_FILE = SynRand/SynRand.exp;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = CA_USE_AUDIO_PLUGIN_ONLY;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = SynRand/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "-DCA_AUTO_MIDI_MAP=1";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/CoreAudio/**”";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3672371E415B3C004B5F75 /* Build configuration list for PBXProject "SynRand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3672C21E415B3C004B5F75 /* Debug */,
+				AA3672C31E415B3C004B5F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3672C41E415B3C004B5F75 /* Build configuration list for PBXNativeTarget "SynRand_CocoaViewFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3672C51E415B3C004B5F75 /* Debug */,
+				AA3672C61E415B3C004B5F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3672C71E415B3C004B5F75 /* Build configuration list for PBXNativeTarget "SynRand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3672C81E415B3C004B5F75 /* Debug */,
+				AA3672C91E415B3C004B5F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA3672341E415B3C004B5F75 /* Project object */;
+}

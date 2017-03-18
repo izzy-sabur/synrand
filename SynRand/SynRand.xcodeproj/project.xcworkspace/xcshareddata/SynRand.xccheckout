@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>83C20213-D172-45AD-90A4-538ACEE0FABD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SynRand</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>fdb305c1-15e0-4f83-baef-45ac90dc8f92</key>
+		<string>https://svn.digipen.edu/users/i.abdussabur</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SynRand/SynRand.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>fdb305c1-15e0-4f83-baef-45ac90dc8f92</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>fdb305c1-15e0-4f83-baef-45ac90dc8f92</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>fdb305c1-15e0-4f83-baef-45ac90dc8f92</string>
+			<key>IDESourceControlWCCName</key>
+			<string>i.abdussabur</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "fdb305c1-15e0-4f83-baef-45ac90dc8f92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "fdb305c1-15e0-4f83-baef-45ac90dc8f92" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "fdb305c1-15e0-4f83-baef-45ac90dc8f92" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "83C20213-D172-45AD-90A4-538ACEE0FABD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "fdb305c1-15e0-4f83-baef-45ac90dc8f92" : "i.abdussabur"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SynRand",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SynRand\/SynRand.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.digipen.edu\/users\/i.abdussabur",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "fdb305c1-15e0-4f83-baef-45ac90dc8f92"
+    }
+  ]
+}
