@@ -52,7 +52,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 #include "SynRandUtil.h"
-
+#include "ADSRView.h"
 /************************************************************************************************************/
 /* NOTE: It is important to rename ALL ui classes when using the Xcode Audio Unit with Cocoa View template	*/
 /*		 Cocoa has a flat namespace, and if you use the default filenames, it is possible that you will		*/
@@ -69,14 +69,19 @@
 @interface SynRand_CocoaView : NSView
 {
     // IB Members
-    IBOutlet SynRand_GestureSlider * uiGlobalVolSlider, *uiPartFreqSlider;
-    IBOutlet NSTextField *			uiGlobalVolField, *uiPartFreqField;
+    IBOutlet SynRand_GestureSlider * uiGlobalVolSlider, *uiRandomSlider, *uiPartFreqSlider;
+    IBOutlet NSTextField *			uiGlobalVolField, *uiRandomField, *uiPartFreqField;
     IBOutlet SynRand_GestureSlider * uiPartVolSlider, *uiPartLFOSlider;
     IBOutlet NSTextField *			uiPartVolField, *uiPartLFOFreqField;
-    IBOutlet NSSegmentedCell *      uiPartSelectCells;
+    IBOutlet SynRand_GestureSlider * uiAmpAttackSlider, *uiAmpDecaySlider, *uiAmpSustainSlider, *uiAmpReleaseSlider;
+    IBOutlet NSTextField *          uiAmpAttackField, *uiAmpDecayField, *uiAmpSustainField, *uiAmpReleaseField;
+    IBOutlet SynRand_GestureSlider * uiFreqAttackSlider, *uiFreqDecaySlider, *uiFreqSustainSlider, *uiFreqReleaseSlider, *uiFreqScaleSlider;
+    IBOutlet NSTextField *          uiFreqAttackField, *uiFreqDecayField, *uiFreqSustainField, *uiFreqReleaseField, *uiFreqScaleField;
+    IBOutlet NSSegmentedControl *      uiPartSelectCells;
     IBOutlet NSTextField *          uiPartNumLabel;
-    IBOutlet NSButton *             uiPartEnabledBtn;
+    IBOutlet NSButton *             uiPartEnabledBtn, *uiRandomToggleBtn;
     IBOutlet NSPopUpButton *        uiWaveformList;
+    IBOutlet ADSRView *               uiAmpADSRView, *uiFreqADSRView;
     
     // Other Members
     AudioUnit 				mAU;
@@ -99,6 +104,18 @@
 - (IBAction)iaPartLFOChanged:(id)sender;
 - (IBAction)iaPartVolChanged:(id)sender;
 - (IBAction)iaPartWaveformChanged:(id)sender;
+- (IBAction)iaRandomCentChanged:(id)sender;
+- (IBAction)iaRandomAllButtonPushed:(id)sender;
+- (IBAction)iaRandomCurrButtonPushed:(id)sender;
+- (IBAction)iaPartAmpAttackChanged:(id)sender;
+- (IBAction)iaPartAmpDecayChanged:(id)sender;
+- (IBAction)iaPartAmpSustainChanged:(id)sender;
+- (IBAction)iaPartAmpReleaseChanged:(id)sender;
+- (IBAction)iaPartFreqAttackChanged:(id)sender;
+- (IBAction)iaPartFreqDecayChanged:(id)sender;
+- (IBAction)iaPartFreqSustainChanged:(id)sender;
+- (IBAction)iaPartFreqReleaseChanged:(id)sender;
+- (IBAction)iaPartFreqScaleChanged:(id)sender;
 
 
 #pragma mark ____ PRIVATE FUNCTIONS

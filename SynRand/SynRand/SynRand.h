@@ -60,20 +60,9 @@ static const UInt32 kNumNotes = 12;
 
 // parameters
 static const float kDefaultValue_GlobalVolume = 0.5;
-static const float kDefaultValue_PartFreqMod = 1;
-static const float kDefaultValue_PartVolMod = 1.0;
-static const float kDefaultValue_PartEnabledBool = 0;
-static const float kDefaultValue_PartLFOFreq = 1.0;
-static const int kDefaultValue_PartWaveType = 0;
 
 
 static CFStringRef kGlobalVolumeName = CFSTR("Global Volume");
-static CFStringRef kWaveTypeName = CFSTR("Wave Type");
-static CFStringRef kPartFreqModName = CFSTR("Frequency Modifier");
-static CFStringRef kPartVolModName = CFSTR("Volume Modifier");
-static CFStringRef kPartEnabledBoolName = CFSTR("Enabled State");
-static CFStringRef kPartLFOFreqName = CFSTR("Low Frequency Oscillator");
-static CFStringRef kPartWaveTypeName = CFSTR("Waveform Type");
 
 struct TestNote : public SynthNote
 {
@@ -85,29 +74,35 @@ struct TestNote : public SynthNote
         printf("TestNote::Attack %p %d\n", this, GetState());
 #endif
         double sampleRate = SampleRate();
-        amp = 0.;
+        
         maxamp = 0.4 * pow(inParams.mVelocity/127., 3.);
-        up_slope = maxamp / (0.1 * sampleRate);
-        dn_slope = -maxamp / (0.3 * sampleRate);
         fast_dn_slope = -maxamp / (0.05 * sampleRate);
+        
         
         for(int i = 0; i < NUM_PARTIALS; i++)
         {
+            partAmp[i] = 0;
+            partFreqAmp[i] = 0;
             partPhase[i] = 0;
             lfoPhase[i] = 0;
+            hitUnity[i] = false;
+            hitFreqUnity[i] = false;
         }
         return true;
     }
     virtual void			Kill(UInt32 inFrame); // voice is being stolen.
     virtual void			Release(UInt32 inFrame);
     virtual void			FastRelease(UInt32 inFrame);
-    virtual Float32			Amplitude() { return amp; } // used for finding quietest note for voice stealing.
+    virtual Float32			Amplitude() { return partAmp[0]; } // used for finding quietest note for voice stealing.
     virtual OSStatus		Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFrames, AudioBufferList** inBufferList, UInt32 inOutBusCount);
     
-    double amp, maxamp;
-    double up_slope, dn_slope, fast_dn_slope;
-    double partPhase[NUM_PARTIALS];
-    double lfoPhase [NUM_PARTIALS];
+    double  maxamp;
+    double  fast_dn_slope;
+    bool    hitUnity[NUM_PARTIALS], hitFreqUnity[NUM_PARTIALS];
+    double  partPhase[NUM_PARTIALS];
+    double  lfoPhase [NUM_PARTIALS];
+    double  partAmp[NUM_PARTIALS];
+    double  partFreqAmp[NUM_PARTIALS];
 };
 
 

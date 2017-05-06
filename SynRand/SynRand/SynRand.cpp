@@ -55,7 +55,7 @@ static const UInt32 kMaxActiveNotes = 8;
 const double twopi = 2.0 * 3.1415926535;
 
 inline double pow5(double x) {double x2 = x*x; return x2*x2*x;}
-
+#define TO_MILLISECONDS 1000.0f
 double squareSound(double pos)
 {
     double s1 = pos/twopi;
@@ -108,11 +108,25 @@ SynRand::SynRand(AudioUnit component)
     
     for(int i = 0; i < NUM_PARTIALS; i++)
     {
-        Globals()->SetParameter(kNumGlobalParams + kPartFreqMod + (kNumPartParams * i), kDefaultValue_PartFreqMod);
-        Globals()->SetParameter(kNumGlobalParams + kPartVolMod + (kNumPartParams * i), kDefaultValue_PartVolMod);
-        Globals()->SetParameter(kNumGlobalParams + kPartEnabledBool + (kNumPartParams * i), kDefaultValue_PartEnabledBool);
-        Globals()->SetParameter(kNumGlobalParams + kPartLFOFreq + (kNumPartParams * i), kDefaultValue_PartLFOFreq);
-        Globals()->SetParameter(kNumGlobalParams + kPartWaveType + (kNumPartParams * i), kDefaultValue_PartWaveType);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqOffset + (kNumPartParams * i), SYRD_PARAM_INFO[kPartFreqOffset].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartVolMod + (kNumPartParams * i), SYRD_PARAM_INFO[kPartVolMod].mDefaultVal);
+        
+        if(i == 0)
+            Globals()->SetParameter(kNumGlobalParams + kPartEnabledBool + (kNumPartParams * i), 1);
+        else
+            Globals()->SetParameter(kNumGlobalParams + kPartEnabledBool + (kNumPartParams * i), SYRD_PARAM_INFO[kPartEnabledBool].mDefaultVal);
+        
+        Globals()->SetParameter(kNumGlobalParams + kPartLFOFreq + (kNumPartParams * i),     SYRD_PARAM_INFO[kPartLFOFreq].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartWaveType + (kNumPartParams * i),    SYRD_PARAM_INFO[kPartWaveType].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartATKTime + (kNumPartParams * i),     SYRD_PARAM_INFO[kPartATKTime].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartDECTime + (kNumPartParams * i),     SYRD_PARAM_INFO[kPartDECTime].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartSUSLevel + (kNumPartParams * i),    SYRD_PARAM_INFO[kPartSUSLevel].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartRELTime + (kNumPartParams * i),     SYRD_PARAM_INFO[kPartRELTime].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqScale + (kNumPartParams * i),   SYRD_PARAM_INFO[kPartFreqScale].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqATKTime + (kNumPartParams * i), SYRD_PARAM_INFO[kPartFreqATKTime].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqDECTime + (kNumPartParams * i), SYRD_PARAM_INFO[kPartFreqDECTime].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqSUSLevel + (kNumPartParams * i), SYRD_PARAM_INFO[kPartFreqSUSLevel].mDefaultVal);
+        Globals()->SetParameter(kNumGlobalParams + kPartFreqRELTime + (kNumPartParams * i), SYRD_PARAM_INFO[kPartFreqRELTime].mDefaultVal);
     }
 }
 
@@ -237,56 +251,19 @@ OSStatus			SynRand::GetParameterInfo(AudioUnitScope		inScope,
             int numGroup = (hold / kNumPartParams) + 1;
             hold %= kNumPartParams;
             
-            switch(hold)
+            if((hold < kNumPartParams) && !(hold < 0))
             {
-                case kPartFreqMod:
-                    AUBase::FillInParameterName (outParameterInfo, kPartFreqModName, false);
-                    outParameterInfo.unit = kAudioUnitParameterUnit_LinearGain;
-                    outParameterInfo.minValue = 0.0;
-                    outParameterInfo.maxValue = 16;
-                    outParameterInfo.clumpID = numGroup;
-                    outParameterInfo.defaultValue = kDefaultValue_PartFreqMod;
-                    AUBase::HasClump(outParameterInfo, numGroup);
-                    break;
-                case kPartVolMod:
-                    AUBase::FillInParameterName (outParameterInfo, kPartVolModName, false);
-                    outParameterInfo.unit = kAudioUnitParameterUnit_LinearGain;
-                    outParameterInfo.minValue = 0.0;
-                    outParameterInfo.maxValue = 2;
-                    outParameterInfo.clumpID = numGroup;
-                    outParameterInfo.defaultValue = kDefaultValue_PartVolMod;
-                    AUBase::HasClump(outParameterInfo, numGroup);
-                    break;
-                case kPartEnabledBool:
-                    AUBase::FillInParameterName (outParameterInfo, kPartEnabledBoolName, false);
-                    outParameterInfo.unit = kAudioUnitParameterUnit_Boolean;
-                    outParameterInfo.minValue = 0;
-                    outParameterInfo.maxValue = 1;
-                    outParameterInfo.clumpID = numGroup;
-                    outParameterInfo.defaultValue = kDefaultValue_PartEnabledBool;
-                    AUBase::HasClump(outParameterInfo, numGroup);
-                    break;
-                case kPartLFOFreq:
-                    AUBase::FillInParameterName (outParameterInfo, kPartLFOFreqName, false);
-                    outParameterInfo.unit = kAudioUnitParameterUnit_LinearGain;
-                    outParameterInfo.minValue = 0.0;
-                    outParameterInfo.maxValue = 60;
-                    outParameterInfo.clumpID = numGroup;
-                    outParameterInfo.defaultValue = kDefaultValue_PartLFOFreq;
-                    AUBase::HasClump(outParameterInfo, numGroup);
-                    break;
-                case kPartWaveType:
-                    AUBase::FillInParameterName(outParameterInfo, kPartWaveTypeName, false);
-                    outParameterInfo.unit = kAudioUnitParameterUnit_Indexed;
-                    outParameterInfo.minValue = kWT_SINE;
-                    outParameterInfo.maxValue = kWT_MAXNUM - 1;
-                    outParameterInfo.clumpID = numGroup;
-                    outParameterInfo.defaultValue = kDefaultValue_PartWaveType;
-                    AUBase::HasClump(outParameterInfo, numGroup);
-                    break;
-                default:
-                    result = kAudioUnitErr_InvalidParameter;
-                    break;
+                AUBase::FillInParameterName (outParameterInfo, SYRD_PARAM_INFO[hold].mName, false);
+                outParameterInfo.unit = SYRD_PARAM_INFO[hold].mUnitType;
+                outParameterInfo.minValue = SYRD_PARAM_INFO[hold].mMinVal;
+                outParameterInfo.maxValue = SYRD_PARAM_INFO[hold].mMaxVal;
+                outParameterInfo.clumpID = numGroup;
+                outParameterInfo.defaultValue = SYRD_PARAM_INFO[hold].mDefaultVal;
+                AUBase::HasClump(outParameterInfo, numGroup);
+            }
+            else
+            {
+                result = kAudioUnitErr_InvalidParameter;
             }
         }
 	}
@@ -423,8 +400,18 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
     float partMod[NUM_PARTIALS];
     float pFreq[NUM_PARTIALS];
     int pWaveType[NUM_PARTIALS];
-    
-    
+    float partATKSlope[NUM_PARTIALS];
+    float partDECSlope[NUM_PARTIALS];
+    float partSUSLevel[NUM_PARTIALS];
+    float partRELSlope[NUM_PARTIALS];
+    float partFreqScale[NUM_PARTIALS];
+    float partFreqATKSlope[NUM_PARTIALS];
+    float partFreqDECSlope[NUM_PARTIALS];
+    float partFreqSUSLevel[NUM_PARTIALS];
+    float partFreqRELSlope[NUM_PARTIALS];
+    float curSlope[NUM_PARTIALS];
+    bool releasing[NUM_PARTIALS];
+    bool ended[NUM_PARTIALS];
     
     // only writes into first bus
     const int bus0 = 0;
@@ -440,17 +427,31 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
     double sampleRate = SampleRate();
     double freq = Frequency() * (twopi / sampleRate);
     
+    // init our ridiculous panoply of partial values
     for(int i = 0; i < NUM_PARTIALS; i++)
     {
-        partMod[i] = GetGlobalParameter(kNumGlobalParams + (kPartFreqMod) + (i * kNumPartParams));
+        partMod[i] = GetGlobalParameter(kNumGlobalParams + (kPartFreqOffset) + (i * kNumPartParams));
         volMod[i] = GetGlobalParameter(kNumGlobalParams + (kPartVolMod) + (i * kNumPartParams));
         lfoFreq[i] = GetGlobalParameter(kNumGlobalParams + (kPartLFOFreq) + (i * kNumPartParams));
         partEnabled[i] = GetGlobalParameter(kNumGlobalParams + (kPartEnabledBool) + (i * kNumPartParams));
         pWaveType[i] = GetGlobalParameter(kNumGlobalParams + (kPartWaveType) + (i * kNumPartParams));
-        pFreq[i] = partMod[i] * freq;
+        partATKSlope[i] = maxamp / ((GetGlobalParameter(kNumGlobalParams + (kPartATKTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        partSUSLevel[i] = GetGlobalParameter(kNumGlobalParams + (kPartSUSLevel) + (i * kNumPartParams)) * maxamp;
+        partDECSlope[i] = (partSUSLevel[i] - maxamp) / ((GetGlobalParameter(kNumGlobalParams + (kPartDECTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        partRELSlope[i] = -maxamp / ((GetGlobalParameter(kNumGlobalParams + (kPartRELTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        partFreqScale[i] = GetGlobalParameter(kNumGlobalParams + (kPartFreqScale) + (i * kNumPartParams));
+        partFreqATKSlope[i] = 1 / ((GetGlobalParameter(kNumGlobalParams + (kPartFreqATKTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        partFreqSUSLevel[i] = GetGlobalParameter(kNumGlobalParams + (kPartFreqSUSLevel) + (i * kNumPartParams));
+        partFreqDECSlope[i] = (partSUSLevel[i] - 1) / ((GetGlobalParameter(kNumGlobalParams + (kPartFreqDECTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        partFreqRELSlope[i] = -1 / ((GetGlobalParameter(kNumGlobalParams + (kPartFreqRELTime) + (i * kNumPartParams)) / TO_MILLISECONDS) * sampleRate);
+        float semitoneOffset = pow(2, partMod[i] / 12);
+        pFreq[i] = semitoneOffset * freq;
+        curSlope[i] = 0;
+        releasing[i] = true;
+        ended[i] = false;
     }
 
-    float slopeAmount = 0.0;
+    // based on the note state, set our movement slope
     switch(GetState())
     {
         case kNoteState_Attacked:
@@ -458,19 +459,30 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
         case kNoteState_ReleasedButSostenutoed:
         case kNoteState_ReleasedButSustained:
         {
-            slopeAmount = up_slope;
+            for(int i =0; i < NUM_PARTIALS; i++)
+            {
+                releasing[i] = false;
+            }
         }
             break;
         
         case kNoteState_Released:
         {
-            slopeAmount = dn_slope;
+            for(int i =0; i < NUM_PARTIALS; i++)
+            {
+                curSlope[i] = partRELSlope[i];
+                releasing[i] = true;
+            }
         }
             break;
             
         case kNoteState_FastReleased:
         {
-            slopeAmount = fast_dn_slope;
+            for(int i =0; i < NUM_PARTIALS; i++)
+            {
+                curSlope[i] = fast_dn_slope;
+                releasing[i] = true;
+            }
         }
             break;
         default:
@@ -478,31 +490,85 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
     }
     
     UInt32 endFrame = 0xFFFFFFFF;
-    bool slopeUp = slopeAmount > 0;
     for (UInt32 frame = 0; frame < inNumFrames; ++frame)
     {
-        // if we're going up and below max, go up
-        if ((amp < maxamp) && slopeUp)
-            amp += slopeAmount;
-        
-        // if we're going down and above 0, go down
-        if(!slopeUp)
-        {
-            if (amp > 0)
-                amp += slopeAmount;
-            else if (endFrame == 0xFFFFFFFF) // if there isn't more decay to do, mark the end frame
-                endFrame = frame;
-        }
-        
         float out = 0;
         float numVoices = 0;
-        
+        bool allVoicesEnded = true;
         for(int i = 0; i < NUM_PARTIALS; i++)
         {
-            if(partMod[i] > 0 && partEnabled[i])
+            // if we're not releasing yet
+            if(!releasing[i])
+            {
+                allVoicesEnded = false;
+                
+                ///////////////// AMPLITUDE ADSR /////////////////////
+                // if we haven't hit unity yet
+                if(!hitUnity[i])
+                {
+                    // if we're not at max yet
+                    if (partAmp[i] < maxamp)
+                    {
+                        partAmp[i] += partATKSlope[i]; // ATTACK
+                        
+                        // and see if we got to unity yet
+                        if(partAmp[i] >= maxamp)
+                            hitUnity[i] = true;
+                    }
+                }
+                else // if we have
+                {
+                    // if we're not at sus level yet
+                    if(partAmp[i] > partSUSLevel[i])
+                        partAmp[i] += partDECSlope[i]; // DECAY
+                    
+                    // but if we are, SUSTAIN
+                }
+                
+                ///////////////// FREQUENCY ADSR /////////////////////
+                if(!hitFreqUnity[i])
+                {
+                    // if we're not at max yet
+                    if (partFreqAmp[i] < 1)
+                    {
+                        partFreqAmp[i] += partFreqATKSlope[i]; // ATTACK
+                        
+                        // and see if we got to unity yet
+                        if(partFreqAmp[i] >= 1)
+                            hitFreqUnity[i] = true;
+                    }
+                }
+                else // if we have
+                {
+                    // if we're not at sus level yet
+                    if(partFreqAmp[i] > partFreqSUSLevel[i])
+                        partFreqAmp[i] += partFreqDECSlope[i]; // DECAY
+                    
+                    // but if we are, SUSTAIN
+                }
+            }
+            else // if we are releasing
+            {
+                // if there's more releasing to be done
+                if (partAmp[i] > 0)
+                {
+                    partAmp[i] += curSlope[i]; // RELEASE
+                    allVoicesEnded = false;
+                }
+                else if(!ended[i]) // if there isn't more release to do and we haven't ended yet
+                    ended[i] = true; // end
+                
+                // if there's more releasing to be done
+                if (partFreqAmp[i] > 0)
+                {
+                    partFreqAmp[i] += partFreqRELSlope[i]; // RELEASE
+                }
+            }
+            
+            if(partEnabled[i])
             {
                 double waveValue = waveformFunc[pWaveType[i]](partPhase[i]);
-                out += waveValue * ((lfoFreq[i] != 0) ? sin(lfoPhase[i]) : 1) * amp * globalVol * volMod[i];
+                out += waveValue * ((lfoFreq[i] != 0) ? sin(lfoPhase[i]) : 1) * partAmp[i] * globalVol * volMod[i];
                 numVoices++;
             }
         }
@@ -513,7 +579,7 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
         // increment the phase by the current (angular) frequency
         for(int i = 0; i < NUM_PARTIALS; i++)
         {
-            partPhase[i] += pFreq[i];
+            partPhase[i] += pFreq[i] * pow(2, partFreqAmp[i] * partFreqScale[i] / 12);
             lfoPhase[i] += lfoFreq[i] * (twopi / sampleRate);
         }
         
@@ -527,12 +593,15 @@ OSStatus           TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFr
                 lfoPhase[i] -= twopi;
         }
         
+        if((allVoicesEnded) && (endFrame == 0xFFFFFFFF))
+            endFrame = inNumFrames - 1;
+        
         // then write to left and right
         left[frame] += out;
         if(right)
             right[frame] += out;
     }
-    
+
     // if there was an end frame, note it
     if(endFrame != 0xFFFFFFFF)
         NoteEnded(endFrame);

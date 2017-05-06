@@ -1,1478 +1,687 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">14F1808</string>
-		<string key="IBDocument.InterfaceBuilderVersion">6254</string>
-		<string key="IBDocument.AppKitVersion">1348.17</string>
-		<string key="IBDocument.HIToolboxVersion">758.70</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">6254</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>NSBox</string>
-			<string>NSButton</string>
-			<string>NSButtonCell</string>
-			<string>NSCustomObject</string>
-			<string>NSCustomView</string>
-			<string>NSMenu</string>
-			<string>NSMenuItem</string>
-			<string>NSPopUpButton</string>
-			<string>NSPopUpButtonCell</string>
-			<string>NSSegmentedCell</string>
-			<string>NSSegmentedControl</string>
-			<string>NSSlider</string>
-			<string>NSSliderCell</string>
-			<string>NSTextField</string>
-			<string>NSTextFieldCell</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-		</array>
-		<dictionary class="NSMutableDictionary" key="IBDocument.Metadata"/>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1056596230">
-			<object class="NSCustomObject" id="341947676">
-				<string key="NSClassName">SynRand_CocoaViewFactory</string>
-			</object>
-			<object class="NSCustomObject" id="268622614">
-				<string key="NSClassName">FirstResponder</string>
-			</object>
-			<object class="NSCustomObject" id="938582990">
-				<string key="NSClassName">NSApplication</string>
-			</object>
-			<object class="NSCustomView" id="963808189">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">256</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="NSPopUpButton" id="420521162">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{363, 111}, {134, 26}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSPopUpButtonCell" key="NSCell" id="785595781">
-							<int key="NSCellFlags">67108928</int>
-							<int key="NSCellFlags2">134219776</int>
-							<object class="NSFont" key="NSSupport">
-								<bool key="IBIsSystemFont">YES</bool>
-								<double key="NSSize">13</double>
-								<int key="NSfFlags">1301</int>
-							</object>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="420521162"/>
-							<int key="NSButtonFlags">-2038284288</int>
-							<int key="NSButtonFlags2">129</int>
-							<object class="NSFont" key="NSAlternateImage" id="611857272">
-								<string key="NSName">.HelveticaNeueDeskInterface-Regular</string>
-								<double key="NSSize">13</double>
-								<int key="NSfFlags">16</int>
-							</object>
-							<string key="NSAlternateContents"/>
-							<string key="NSKeyEquivalent"/>
-							<int key="NSPeriodicDelay">400</int>
-							<int key="NSPeriodicInterval">75</int>
-							<int key="NSAuxButtonType">7</int>
-							<nil key="NSMenuItem"/>
-							<bool key="NSMenuItemRespectAlignment">YES</bool>
-							<object class="NSMenu" key="NSMenu" id="610823391">
-								<string key="NSTitle"/>
-								<array class="NSMutableArray" key="NSMenuItems">
-									<object class="NSMenuItem" id="822939853">
-										<reference key="NSMenu" ref="610823391"/>
-										<string key="NSTitle">Sinusoidal</string>
-										<string key="NSKeyEquiv">1</string>
-										<int key="NSMnemonicLoc">2147483647</int>
-										<object class="NSCustomResource" key="NSOnImage" id="35488850">
-											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">NSMenuCheckmark</string>
-										</object>
-										<object class="NSCustomResource" key="NSMixedImage" id="193594792">
-											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">NSMenuMixedState</string>
-										</object>
-										<string key="NSAction">_popUpItemAction:</string>
-										<reference key="NSTarget" ref="785595781"/>
-									</object>
-									<object class="NSMenuItem" id="6643464">
-										<reference key="NSMenu" ref="610823391"/>
-										<string key="NSTitle">Square</string>
-										<string key="NSKeyEquiv">2</string>
-										<int key="NSMnemonicLoc">2147483647</int>
-										<reference key="NSOnImage" ref="35488850"/>
-										<reference key="NSMixedImage" ref="193594792"/>
-										<string key="NSAction">_popUpItemAction:</string>
-										<int key="NSTag">1</int>
-										<reference key="NSTarget" ref="785595781"/>
-									</object>
-									<object class="NSMenuItem" id="847595340">
-										<reference key="NSMenu" ref="610823391"/>
-										<string key="NSTitle">Sawtooth</string>
-										<string key="NSKeyEquiv">3</string>
-										<int key="NSMnemonicLoc">2147483647</int>
-										<reference key="NSOnImage" ref="35488850"/>
-										<reference key="NSMixedImage" ref="193594792"/>
-										<string key="NSAction">_popUpItemAction:</string>
-										<int key="NSTag">2</int>
-										<reference key="NSTarget" ref="785595781"/>
-									</object>
-									<object class="NSMenuItem" id="676501835">
-										<reference key="NSMenu" ref="610823391"/>
-										<string key="NSTitle">Triangle</string>
-										<string key="NSKeyEquiv">4</string>
-										<int key="NSMnemonicLoc">2147483647</int>
-										<reference key="NSOnImage" ref="35488850"/>
-										<reference key="NSMixedImage" ref="193594792"/>
-										<string key="NSAction">_popUpItemAction:</string>
-										<int key="NSTag">3</int>
-										<reference key="NSTarget" ref="785595781"/>
-									</object>
-								</array>
-							</object>
-							<int key="NSSelectedIndex">-1</int>
-							<int key="NSPreferredEdge">1</int>
-							<bool key="NSUsesItemFromMenu">YES</bool>
-							<bool key="NSAltersState">YES</bool>
-							<int key="NSArrowPosition">2</int>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="966616797">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{262, 114}, {87, 17}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="420521162"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="36889937">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">Waveform Type</string>
-							<object class="NSFont" key="NSSupport" id="26">
-								<bool key="IBIsSystemFont">YES</bool>
-								<double key="NSSize">11</double>
-								<int key="NSfFlags">3100</int>
-							</object>
-							<reference key="NSControlView" ref="966616797"/>
-							<object class="NSColor" key="NSBackgroundColor" id="314039258">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">controlColor</string>
-								<object class="NSColor" key="NSColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
-								</object>
-							</object>
-							<object class="NSColor" key="NSTextColor" id="483457251">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">controlTextColor</string>
-								<object class="NSColor" key="NSColor" id="378899941">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MAA</bytes>
-								</object>
-							</object>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSTextField" id="528192563">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{502, 158}, {51, 22}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="966616797"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="235190926">
-							<int key="NSCellFlags">-1804599231</int>
-							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents"/>
-							<object class="NSFont" key="NSSupport" id="859889199">
-								<bool key="IBIsSystemFont">YES</bool>
-								<double key="NSSize">13</double>
-								<int key="NSfFlags">1044</int>
-							</object>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="528192563"/>
-							<bool key="NSDrawsBackground">YES</bool>
-							<object class="NSColor" key="NSBackgroundColor" id="884306077">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">textBackgroundColor</string>
-								<object class="NSColor" key="NSColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-								</object>
-							</object>
-							<object class="NSColor" key="NSTextColor" id="519856794">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">textColor</string>
-								<reference key="NSColor" ref="378899941"/>
-							</object>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSSlider" id="751189776">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{363, 159}, {133, 26}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="528192563"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSSliderCell" key="NSCell" id="456770102">
-							<int key="NSCellFlags">-2080112384</int>
-							<int key="NSCellFlags2">0</int>
-							<object class="NSMutableString" key="NSContents">
-								<characters key="NS.bytes"/>
-							</object>
-							<object class="NSFont" key="NSSupport" id="511466392">
-								<string key="NSName">Helvetica</string>
-								<double key="NSSize">12</double>
-								<int key="NSfFlags">16</int>
-							</object>
-							<reference key="NSControlView" ref="751189776"/>
-							<double key="NSMaxValue">60</double>
-							<double key="NSMinValue">0.0</double>
-							<double key="NSValue">0.0</double>
-							<double key="NSAltIncValue">0.0</double>
-							<int key="NSNumberOfTickMarks">1</int>
-							<int key="NSTickMarkPosition">1</int>
-							<bool key="NSAllowsTickMarkValuesOnly">NO</bool>
-							<bool key="NSVertical">NO</bool>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="411801491">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{278, 162}, {54, 14}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="751189776"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="194237429">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">LFO Freq</string>
-							<reference key="NSSupport" ref="26"/>
-							<reference key="NSControlView" ref="411801491"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="483457251"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSTextField" id="968501505">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{502, 189}, {51, 22}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="411801491"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="600007332">
-							<int key="NSCellFlags">-1804599231</int>
-							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents"/>
-							<reference key="NSSupport" ref="859889199"/>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="968501505"/>
-							<bool key="NSDrawsBackground">YES</bool>
-							<reference key="NSBackgroundColor" ref="884306077"/>
-							<reference key="NSTextColor" ref="519856794"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSSlider" id="1057629274">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{363, 190}, {133, 26}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="968501505"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSSliderCell" key="NSCell" id="522598128">
-							<int key="NSCellFlags">67371264</int>
-							<int key="NSCellFlags2">0</int>
-							<object class="NSMutableString" key="NSContents">
-								<characters key="NS.bytes"/>
-							</object>
-							<reference key="NSSupport" ref="511466392"/>
-							<reference key="NSControlView" ref="1057629274"/>
-							<double key="NSMaxValue">4</double>
-							<double key="NSMinValue">0.0</double>
-							<double key="NSValue">0.0</double>
-							<double key="NSAltIncValue">0.0</double>
-							<int key="NSNumberOfTickMarks">1</int>
-							<int key="NSTickMarkPosition">1</int>
-							<bool key="NSAllowsTickMarkValuesOnly">NO</bool>
-							<bool key="NSVertical">NO</bool>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="824968120">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{262, 193}, {87, 14}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1057629274"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="339120349">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">Frequency Mod</string>
-							<reference key="NSSupport" ref="26"/>
-							<reference key="NSControlView" ref="824968120"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="483457251"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSTextField" id="85179359">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{502, 219}, {51, 22}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="824968120"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="785322096">
-							<int key="NSCellFlags">-1804599231</int>
-							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents"/>
-							<reference key="NSSupport" ref="859889199"/>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="85179359"/>
-							<bool key="NSDrawsBackground">YES</bool>
-							<reference key="NSBackgroundColor" ref="884306077"/>
-							<reference key="NSTextColor" ref="519856794"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSSlider" id="611958927">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{363, 220}, {133, 26}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="85179359"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSSliderCell" key="NSCell" id="519783914">
-							<int key="NSCellFlags">67371264</int>
-							<int key="NSCellFlags2">0</int>
-							<object class="NSMutableString" key="NSContents">
-								<characters key="NS.bytes"/>
-							</object>
-							<reference key="NSSupport" ref="511466392"/>
-							<reference key="NSControlView" ref="611958927"/>
-							<double key="NSMaxValue">2</double>
-							<double key="NSMinValue">0.0</double>
-							<double key="NSValue">0.0</double>
-							<double key="NSAltIncValue">0.0</double>
-							<int key="NSNumberOfTickMarks">1</int>
-							<int key="NSTickMarkPosition">1</int>
-							<bool key="NSAllowsTickMarkValuesOnly">NO</bool>
-							<bool key="NSVertical">NO</bool>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="370353493">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{284, 223}, {43, 14}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="611958927"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="490100689">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">Volume</string>
-							<reference key="NSSupport" ref="26"/>
-							<reference key="NSControlView" ref="370353493"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="483457251"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSButton" id="949232660">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{118, 279}, {39, 38}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="370353493"/>
-						<string key="NSReuseIdentifierKey">_NS:1990</string>
-						<string key="NSHuggingPriority">{750, 750}</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSButtonCell" key="NSCell" id="190852803">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">0</int>
-							<string key="NSContents"/>
-							<reference key="NSSupport" ref="859889199"/>
-							<string key="NSCellIdentifier">_NS:1990</string>
-							<reference key="NSControlView" ref="949232660"/>
-							<int key="NSButtonFlags">915013632</int>
-							<int key="NSButtonFlags2">135</int>
-							<reference key="NSAlternateImage" ref="611857272"/>
-							<string key="NSAlternateContents"/>
-							<string key="NSKeyEquivalent"/>
-							<int key="NSPeriodicDelay">400</int>
-							<int key="NSPeriodicInterval">75</int>
-							<int key="NSAuxButtonType">6</int>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="438197363">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{81, 285}, {43, 29}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="949232660"/>
-						<string key="NSReuseIdentifierKey">_NS:526</string>
-						<string key="NSHuggingPriority">{251, 750}</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="334139826">
-							<int key="NSCellFlags">68157504</int>
-							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">1</string>
-							<object class="NSFont" key="NSSupport">
-								<bool key="IBIsSystemFont">YES</bool>
-								<double key="NSSize">24</double>
-								<int key="NSfFlags">1044</int>
-							</object>
-							<string key="NSCellIdentifier">_NS:526</string>
-							<reference key="NSControlView" ref="438197363"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<object class="NSColor" key="NSTextColor" id="388194309">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">labelColor</string>
-								<reference key="NSColor" ref="378899941"/>
-							</object>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSTextField" id="677679736">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{18, 291}, {59, 17}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="438197363"/>
-						<string key="NSReuseIdentifierKey">_NS:526</string>
-						<string key="NSHuggingPriority">{251, 750}</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="451941145">
-							<int key="NSCellFlags">68157504</int>
-							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">Partial #:</string>
-							<reference key="NSSupport" ref="859889199"/>
-							<string key="NSCellIdentifier">_NS:526</string>
-							<reference key="NSControlView" ref="677679736"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="388194309"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSBox" id="631956239">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">12</int>
-						<string key="NSFrame">{{0, 320}, {835, 5}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="677679736"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<string key="NSOffsets">{0, 0}</string>
-						<object class="NSTextFieldCell" key="NSTitleCell">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">0</int>
-							<string key="NSContents">Box</string>
-							<reference key="NSSupport" ref="859889199"/>
-							<reference key="NSBackgroundColor" ref="884306077"/>
-							<reference key="NSTextColor" ref="388194309"/>
-						</object>
-						<int key="NSBorderType">3</int>
-						<int key="NSBoxType">2</int>
-						<int key="NSTitlePosition">0</int>
-						<bool key="NSTransparent">NO</bool>
-					</object>
-					<object class="NSSegmentedControl" id="989969321">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{361, 360}, {137, 24}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="631956239"/>
-						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSSegmentedCell" key="NSCell" id="596105977">
-							<int key="NSCellFlags">75497472</int>
-							<int key="NSCellFlags2">0</int>
-							<reference key="NSSupport" ref="859889199"/>
-							<string key="NSCellIdentifier">_NS:9</string>
-							<reference key="NSControlView" ref="989969321"/>
-							<array class="NSMutableArray" key="NSSegmentImages">
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<bool key="NSSegmentItemSelected">YES</bool>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<int key="NSSegmentItemTag">1</int>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
-								<object class="NSSegmentItem">
-									<double key="NSSegmentItemWidth">32</double>
-									<int key="NSSegmentItemImageScaling">0</int>
-								</object>
-							</array>
-							<int key="NSSegmentStyle">1</int>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="187715390">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{502, 401}, {51, 22}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="989969321"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="841260005">
-							<int key="NSCellFlags">-1804599231</int>
-							<int key="NSCellFlags2">4195328</int>
-							<string key="NSContents"/>
-							<reference key="NSSupport" ref="859889199"/>
-							<reference key="NSControlView" ref="187715390"/>
-							<bool key="NSDrawsBackground">YES</bool>
-							<reference key="NSBackgroundColor" ref="884306077"/>
-							<reference key="NSTextColor" ref="519856794"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSSlider" id="35504903">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{363, 402}, {133, 26}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="187715390"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSSliderCell" key="NSCell" id="990678944">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">0</int>
-							<object class="NSMutableString" key="NSContents">
-								<characters key="NS.bytes"/>
-							</object>
-							<reference key="NSSupport" ref="511466392"/>
-							<reference key="NSControlView" ref="35504903"/>
-							<double key="NSMaxValue">1</double>
-							<double key="NSMinValue">0.0</double>
-							<double key="NSValue">0.5</double>
-							<double key="NSAltIncValue">0.0</double>
-							<int key="NSNumberOfTickMarks">1</int>
-							<int key="NSTickMarkPosition">1</int>
-							<bool key="NSAllowsTickMarkValuesOnly">NO</bool>
-							<bool key="NSVertical">NO</bool>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-					</object>
-					<object class="NSTextField" id="7772822">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{278, 401}, {82, 17}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="35504903"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="775219921">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">Global Volume</string>
-							<reference key="NSSupport" ref="26"/>
-							<reference key="NSControlView" ref="7772822"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="483457251"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-					<object class="NSTextField" id="953160050">
-						<reference key="NSNextResponder" ref="963808189"/>
-						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{367, 439}, {101, 17}}</string>
-						<reference key="NSSuperview" ref="963808189"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="7772822"/>
-						<bool key="NSEnabled">YES</bool>
-						<object class="NSTextFieldCell" key="NSCell" id="655427059">
-							<int key="NSCellFlags">67108864</int>
-							<int key="NSCellFlags2">4194304</int>
-							<string key="NSContents">Cocoa AU View</string>
-							<reference key="NSSupport" ref="859889199"/>
-							<reference key="NSControlView" ref="953160050"/>
-							<reference key="NSBackgroundColor" ref="314039258"/>
-							<reference key="NSTextColor" ref="483457251"/>
-						</object>
-						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-						<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
-					</object>
-				</array>
-				<string key="NSFrameSize">{835, 476}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="953160050"/>
-				<string key="NSClassName">SynRand_CocoaView</string>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiFreshlyLoadedView</string>
-						<reference key="source" ref="341947676"/>
-						<reference key="destination" ref="963808189"/>
-					</object>
-					<int key="connectionID">32</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaGlobalVolChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="35504903"/>
-					</object>
-					<int key="connectionID">100119</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiGlobalVolSlider</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="35504903"/>
-					</object>
-					<int key="connectionID">100120</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaGlobalVolChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="187715390"/>
-					</object>
-					<int key="connectionID">100121</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiGlobalVolField</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="187715390"/>
-					</object>
-					<int key="connectionID">100122</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartialCellChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="989969321"/>
-					</object>
-					<int key="connectionID">100123</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartSelectCells</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="596105977"/>
-					</object>
-					<int key="connectionID">100124</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartNumLabel</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="438197363"/>
-					</object>
-					<int key="connectionID">100126</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartEnabledBtn</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="949232660"/>
-					</object>
-					<int key="connectionID">100127</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartVolSlider</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="611958927"/>
-					</object>
-					<int key="connectionID">100128</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartVolField</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="85179359"/>
-					</object>
-					<int key="connectionID">100129</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartLFOSlider</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="751189776"/>
-					</object>
-					<int key="connectionID">100130</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartLFOFreqField</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="528192563"/>
-					</object>
-					<int key="connectionID">100131</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartFreqSlider</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="1057629274"/>
-					</object>
-					<int key="connectionID">100132</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiPartFreqField</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="968501505"/>
-					</object>
-					<int key="connectionID">100133</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartEnabledChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="949232660"/>
-					</object>
-					<int key="connectionID">100134</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartFreqChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="1057629274"/>
-					</object>
-					<int key="connectionID">100135</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartFreqChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="968501505"/>
-					</object>
-					<int key="connectionID">100136</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartLFOChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="751189776"/>
-					</object>
-					<int key="connectionID">100137</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartLFOChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="528192563"/>
-					</object>
-					<int key="connectionID">100138</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartVolChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="611958927"/>
-					</object>
-					<int key="connectionID">100139</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartVolChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="85179359"/>
-					</object>
-					<int key="connectionID">100140</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">iaPartWaveformChanged:</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="420521162"/>
-					</object>
-					<int key="connectionID">100150</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">uiWaveformList</string>
-						<reference key="source" ref="963808189"/>
-						<reference key="destination" ref="420521162"/>
-					</object>
-					<int key="connectionID">100151</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1056596230"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="341947676"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="268622614"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">First Responder</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">22</int>
-						<reference key="object" ref="963808189"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="968501505"/>
-							<reference ref="187715390"/>
-							<reference ref="953160050"/>
-							<reference ref="528192563"/>
-							<reference ref="7772822"/>
-							<reference ref="35504903"/>
-							<reference ref="824968120"/>
-							<reference ref="1057629274"/>
-							<reference ref="411801491"/>
-							<reference ref="751189776"/>
-							<reference ref="631956239"/>
-							<reference ref="611958927"/>
-							<reference ref="677679736"/>
-							<reference ref="438197363"/>
-							<reference ref="949232660"/>
-							<reference ref="85179359"/>
-							<reference ref="370353493"/>
-							<reference ref="966616797"/>
-							<reference ref="420521162"/>
-							<reference ref="989969321"/>
-						</array>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">SynRand_CocoaView</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="35504903"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="990678944"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Global Volume Slider</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">24</int>
-						<reference key="object" ref="7772822"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="775219921"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">25</int>
-						<reference key="object" ref="187715390"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="841260005"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Global Volume Text Field</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100023</int>
-						<reference key="object" ref="990678944"/>
-						<reference key="parent" ref="35504903"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100024</int>
-						<reference key="object" ref="775219921"/>
-						<reference key="parent" ref="7772822"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100025</int>
-						<reference key="object" ref="841260005"/>
-						<reference key="parent" ref="187715390"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-3</int>
-						<reference key="object" ref="938582990"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">Application</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100043</int>
-						<reference key="object" ref="968501505"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="600007332"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Partial Frequency Text Field</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100044</int>
-						<reference key="object" ref="600007332"/>
-						<reference key="parent" ref="968501505"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100049</int>
-						<reference key="object" ref="1057629274"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="522598128"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Partial Frequency Slider</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100050</int>
-						<reference key="object" ref="522598128"/>
-						<reference key="parent" ref="1057629274"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100058</int>
-						<reference key="object" ref="824968120"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="339120349"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100059</int>
-						<reference key="object" ref="339120349"/>
-						<reference key="parent" ref="824968120"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">26</int>
-						<reference key="object" ref="953160050"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="655427059"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100026</int>
-						<reference key="object" ref="655427059"/>
-						<reference key="parent" ref="953160050"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100076</int>
-						<reference key="object" ref="989969321"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="596105977"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Partial Selector Segmented Cell</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100077</int>
-						<reference key="object" ref="596105977"/>
-						<reference key="parent" ref="989969321"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100080</int>
-						<reference key="object" ref="631956239"/>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100095</int>
-						<reference key="object" ref="528192563"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="235190926"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">LFO Frequency Text Field</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100096</int>
-						<reference key="object" ref="751189776"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="456770102"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">LFO Frequency Slider</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100097</int>
-						<reference key="object" ref="411801491"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="194237429"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100098</int>
-						<reference key="object" ref="194237429"/>
-						<reference key="parent" ref="411801491"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100099</int>
-						<reference key="object" ref="456770102"/>
-						<reference key="parent" ref="751189776"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100100</int>
-						<reference key="object" ref="235190926"/>
-						<reference key="parent" ref="528192563"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100103</int>
-						<reference key="object" ref="85179359"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="785322096"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Volume Text Field</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100104</int>
-						<reference key="object" ref="611958927"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="519783914"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Volume Slider</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100105</int>
-						<reference key="object" ref="370353493"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="490100689"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100106</int>
-						<reference key="object" ref="490100689"/>
-						<reference key="parent" ref="370353493"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100107</int>
-						<reference key="object" ref="519783914"/>
-						<reference key="parent" ref="611958927"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100108</int>
-						<reference key="object" ref="785322096"/>
-						<reference key="parent" ref="85179359"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100111</int>
-						<reference key="object" ref="677679736"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="451941145"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Partial Title</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100112</int>
-						<reference key="object" ref="451941145"/>
-						<reference key="parent" ref="677679736"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100113</int>
-						<reference key="object" ref="438197363"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="334139826"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Partial Number</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100114</int>
-						<reference key="object" ref="334139826"/>
-						<reference key="parent" ref="438197363"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100117</int>
-						<reference key="object" ref="949232660"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="190852803"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Enable Button</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100118</int>
-						<reference key="object" ref="190852803"/>
-						<reference key="parent" ref="949232660"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100141</int>
-						<reference key="object" ref="966616797"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="36889937"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100142</int>
-						<reference key="object" ref="36889937"/>
-						<reference key="parent" ref="966616797"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100143</int>
-						<reference key="object" ref="420521162"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="785595781"/>
-						</array>
-						<reference key="parent" ref="963808189"/>
-						<string key="objectName">Waveform List</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100144</int>
-						<reference key="object" ref="785595781"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="610823391"/>
-						</array>
-						<reference key="parent" ref="420521162"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100145</int>
-						<reference key="object" ref="610823391"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="822939853"/>
-							<reference ref="6643464"/>
-							<reference ref="847595340"/>
-							<reference ref="676501835"/>
-						</array>
-						<reference key="parent" ref="785595781"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100146</int>
-						<reference key="object" ref="822939853"/>
-						<reference key="parent" ref="610823391"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100147</int>
-						<reference key="object" ref="6643464"/>
-						<reference key="parent" ref="610823391"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100148</int>
-						<reference key="object" ref="847595340"/>
-						<reference key="parent" ref="610823391"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100149</int>
-						<reference key="object" ref="676501835"/>
-						<reference key="parent" ref="610823391"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100023.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100024.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100025.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100026.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100043.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100044.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<object class="NSMutableString" key="100049.CustomClassName">
-					<characters key="NS.bytes">SynRand_GestureSlider</characters>
-				</object>
-				<string key="100049.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100050.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100058.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100059.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100076.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<integer value="0" key="100077.IBNSSegmentedControlInspectorSelectedSegmentMetadataKey"/>
-				<string key="100077.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100080.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100095.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<object class="NSMutableString" key="100096.CustomClassName">
-					<characters key="NS.bytes">SynRand_GestureSlider</characters>
-				</object>
-				<string key="100096.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100097.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100098.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100099.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100100.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100103.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<object class="NSMutableString" key="100104.CustomClassName">
-					<characters key="NS.bytes">SynRand_GestureSlider</characters>
-				</object>
-				<string key="100104.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100105.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100106.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100107.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100108.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100111.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100112.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100113.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100114.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100117.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100118.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100141.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100142.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100143.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100144.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100145.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100146.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100147.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100148.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100149.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<reference key="22.IBNSViewMetadataGestureRecognizers" ref="0"/>
-				<string key="22.IBPersistedLastKnownCanvasPosition">{824.5, 685}</string>
-				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<object class="NSMutableString" key="23.CustomClassName">
-					<characters key="NS.bytes">SynRand_GestureSlider</characters>
-				</object>
-				<string key="23.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="26.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">100151</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">SynRand_CocoaView</string>
-					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="iaGlobalVolChanged:">id</string>
-						<string key="iaPartEnabledChanged:">id</string>
-						<string key="iaPartFreqChanged:">id</string>
-						<string key="iaPartLFOChanged:">id</string>
-						<string key="iaPartVolChanged:">id</string>
-						<string key="iaPartWaveformChanged:">id</string>
-						<string key="iaPartialCellChanged:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="iaGlobalVolChanged:">
-							<string key="name">iaGlobalVolChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartEnabledChanged:">
-							<string key="name">iaPartEnabledChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartFreqChanged:">
-							<string key="name">iaPartFreqChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartLFOChanged:">
-							<string key="name">iaPartLFOChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartVolChanged:">
-							<string key="name">iaPartVolChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartWaveformChanged:">
-							<string key="name">iaPartWaveformChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartialCellChanged:">
-							<string key="name">iaPartialCellChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="uiGlobalVolField">NSTextField</string>
-						<string key="uiGlobalVolSlider">SynRand_GestureSlider</string>
-						<string key="uiPartEnabledBtn">NSButton</string>
-						<string key="uiPartFreqField">NSTextField</string>
-						<string key="uiPartFreqSlider">SynRand_GestureSlider</string>
-						<string key="uiPartLFOFreqField">NSTextField</string>
-						<string key="uiPartLFOSlider">SynRand_GestureSlider</string>
-						<string key="uiPartNumLabel">NSTextField</string>
-						<string key="uiPartSelectCells">NSSegmentedCell</string>
-						<string key="uiPartVolField">NSTextField</string>
-						<string key="uiPartVolSlider">SynRand_GestureSlider</string>
-						<string key="uiWaveformList">NSPopUpButton</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="uiGlobalVolField">
-							<string key="name">uiGlobalVolField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiGlobalVolSlider">
-							<string key="name">uiGlobalVolSlider</string>
-							<string key="candidateClassName">SynRand_GestureSlider</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartEnabledBtn">
-							<string key="name">uiPartEnabledBtn</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartFreqField">
-							<string key="name">uiPartFreqField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartFreqSlider">
-							<string key="name">uiPartFreqSlider</string>
-							<string key="candidateClassName">SynRand_GestureSlider</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartLFOFreqField">
-							<string key="name">uiPartLFOFreqField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartLFOSlider">
-							<string key="name">uiPartLFOSlider</string>
-							<string key="candidateClassName">SynRand_GestureSlider</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartNumLabel">
-							<string key="name">uiPartNumLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartSelectCells">
-							<string key="name">uiPartSelectCells</string>
-							<string key="candidateClassName">NSSegmentedCell</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartVolField">
-							<string key="name">uiPartVolField</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiPartVolSlider">
-							<string key="name">uiPartVolSlider</string>
-							<string key="candidateClassName">SynRand_GestureSlider</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="uiWaveformList">
-							<string key="name">uiWaveformList</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="996439485">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../SynRand/SynRand_CocoaView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SynRand_CocoaView</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="iaGlobalVolChanged:">id</string>
-						<string key="iaPartEnabledChanged:">id</string>
-						<string key="iaPartFreqChanged:">id</string>
-						<string key="iaPartLFOChanged:">id</string>
-						<string key="iaPartVolChanged:">id</string>
-						<string key="iaPartWaveformChanged:">id</string>
-						<string key="iaPartialCellChanged:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="iaGlobalVolChanged:">
-							<string key="name">iaGlobalVolChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartEnabledChanged:">
-							<string key="name">iaPartEnabledChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartFreqChanged:">
-							<string key="name">iaPartFreqChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartLFOChanged:">
-							<string key="name">iaPartLFOChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartVolChanged:">
-							<string key="name">iaPartVolChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartWaveformChanged:">
-							<string key="name">iaPartWaveformChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="iaPartialCellChanged:">
-							<string key="name">iaPartialCellChanged:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../SynRand/SynRand_CocoaView.m</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SynRand_CocoaViewFactory</string>
-					<string key="superclassName">NSObject</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">uiFreshlyLoadedView</string>
-						<string key="NS.object.0">SynRand_CocoaView</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">uiFreshlyLoadedView</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">uiFreshlyLoadedView</string>
-							<string key="candidateClassName">SynRand_CocoaView</string>
-						</object>
-					</object>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../SynRand/SynRand_CocoaViewFactory.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SynRand_GestureSlider</string>
-					<string key="superclassName">NSSlider</string>
-					<reference key="sourceIdentifier" ref="996439485"/>
-				</object>
-			</array>
-		</object>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
-		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">NO</bool>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
-			<integer value="1060" key="NS.object.0"/>
-		</object>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.InterfaceBuilder3</string>
-			<integer value="4600" key="NS.object.0"/>
-		</object>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NSMenuCheckmark">{12, 12}</string>
-			<string key="NSMenuMixedState">{10, 2}</string>
-		</dictionary>
-	</data>
-</archive>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1060" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SynRand_CocoaViewFactory">
+            <connections>
+                <outlet property="uiFreshlyLoadedView" destination="22" id="32"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="22" userLabel="SynRand_CocoaView" customClass="SynRand_CocoaView">
+            <rect key="frame" x="0.0" y="0.0" width="835" height="523"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" id="26">
+                    <rect key="frame" x="367" y="486" width="101" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Cocoa AU View" id="100026">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="24">
+                    <rect key="frame" x="18" y="447" width="82" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Global Volume" id="100024">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="23" userLabel="Global Volume Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="103" y="448" width="133" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <sliderCell key="cell" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" numberOfTickMarks="1" sliderType="linear" id="100023">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="iaGlobalVolChanged:" target="22" id="100119"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="25" userLabel="Global Volume Text Field">
+                    <rect key="frame" x="242" y="447" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="100025">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaGlobalVolChanged:" target="22" id="100121"/>
+                    </connections>
+                </textField>
+                <segmentedControl verticalHuggingPriority="750" id="100076" userLabel="Partial Selector Segmented Cell">
+                    <rect key="frame" x="215" y="376" width="405" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="100077">
+                        <font key="font" metaFont="system"/>
+                        <segments>
+                            <segment width="24" selected="YES">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24" tag="1">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                            <segment width="24">
+                                <nil key="label"/>
+                            </segment>
+                        </segments>
+                    </segmentedCell>
+                    <connections>
+                        <action selector="iaPartialCellChanged:" target="22" id="bBZ-kt-lWh"/>
+                    </connections>
+                </segmentedControl>
+                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="100080">
+                    <rect key="frame" x="0.0" y="367" width="835" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="100111" userLabel="Partial Title">
+                    <rect key="frame" x="18" y="338" width="59" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Partial #:" id="100112">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="100113" userLabel="Partial Number">
+                    <rect key="frame" x="81" y="332" width="43" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="1" id="100114">
+                        <font key="font" metaFont="system" size="24"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="100117" userLabel="Enable Button">
+                    <rect key="frame" x="118" y="326" width="39" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="round" bezelStyle="circular" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" id="100118">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="iaPartEnabledChanged:" target="22" id="100134"/>
+                    </connections>
+                </button>
+                <slider verticalHuggingPriority="750" id="100104" userLabel="Volume Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="200" y="220" width="133" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="2" tickMarkPosition="above" numberOfTickMarks="1" sliderType="linear" id="100107">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="iaPartVolChanged:" target="22" id="100139"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="100105">
+                    <rect key="frame" x="121" y="224" width="43" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Volume" id="100106">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="100103" userLabel="Volume Text Field">
+                    <rect key="frame" x="339" y="220" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="100108">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartVolChanged:" target="22" id="100140"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="100058">
+                    <rect key="frame" x="93" y="190" width="98" height="18"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Semitone Offset" id="100059">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="100049" userLabel="Semitone Offset Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="200" y="191" width="133" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <sliderCell key="cell" continuous="YES" alignment="left" minValue="-96" maxValue="96" tickMarkPosition="above" numberOfTickMarks="1" sliderType="linear" id="100050">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="iaPartFreqChanged:" target="22" id="100135"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="100043" userLabel="Semitone Offset Text Field">
+                    <rect key="frame" x="339" y="190" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="100044">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqChanged:" target="22" id="100136"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="100097">
+                    <rect key="frame" x="115" y="163" width="54" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="LFO Freq" id="100098">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="100096" userLabel="LFO Frequency Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="200" y="160" width="133" height="26"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="60" tickMarkPosition="above" numberOfTickMarks="1" sliderType="linear" id="100099">
+                        <font key="font" size="12" name="Helvetica"/>
+                    </sliderCell>
+                    <connections>
+                        <action selector="iaPartLFOChanged:" target="22" id="100137"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="100095" userLabel="LFO Frequency Text Field">
+                    <rect key="frame" x="339" y="159" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="100100">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartLFOChanged:" target="22" id="100138"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="100141">
+                    <rect key="frame" x="99" y="115" width="87" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Waveform Type" id="100142">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="100143" userLabel="Waveform List">
+                    <rect key="frame" x="200" y="112" width="134" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="100144">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="100145">
+                            <items>
+                                <menuItem title="Sinusoidal" keyEquivalent="1" id="100146">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="Square" tag="1" keyEquivalent="2" id="100147">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="Sawtooth" tag="2" keyEquivalent="3" id="100148">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                                <menuItem title="Triangle" tag="3" keyEquivalent="4" id="100149">
+                                    <modifierMask key="keyEquivalentModifierMask"/>
+                                </menuItem>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="iaPartWaveformChanged:" target="22" id="100150"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="7YD-w0-7nX">
+                    <rect key="frame" x="670" y="492" width="84" height="23"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Randomize" id="46w-2L-kq0">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="100156" userLabel="Randomize Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="664" y="467" width="96" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="100157"/>
+                    <connections>
+                        <action selector="iaRandomCentChanged:" target="22" id="100164"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="100158" userLabel="Randomize Field">
+                    <rect key="frame" x="772" y="468" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="100159">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaRandomCentChanged:" target="22" id="100165"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="100161">
+                    <rect key="frame" x="616" y="471" width="38" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Range" id="100162">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button id="vef-Jg-Hk1">
+                    <rect key="frame" x="641" y="441" width="142" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Can Toggle Partials" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="8VK-Tw-wbE">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" id="100152">
+                    <rect key="frame" x="628" y="383" width="169" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Randomize All Partials" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="100153">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="iaRandomAllButtonPushed:" target="22" id="EdW-WB-8R6"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="X6M-00-YIa">
+                    <rect key="frame" x="616" y="407" width="192" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Randomize Current Partial" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UQv-Be-W2a">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="iaRandomCurrButtonPushed:" target="22" id="2lG-ru-65l"/>
+                    </connections>
+                </button>
+                <customView id="HdB-aG-0xc" userLabel="Amp ADSR View" customClass="ADSRView">
+                    <rect key="frame" x="447" y="248" width="352" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </customView>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="QvK-4B-qbj" userLabel="Amp ADSR A Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="471" y="227" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="nYd-QV-BtF"/>
+                    <connections>
+                        <action selector="iaPartAmpAttackChanged:" target="22" id="f3G-X7-9RY"/>
+                    </connections>
+                </slider>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="b3J-0h-wGd" userLabel="Amp ADSR D Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="545" y="227" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="KSS-Xd-JuA"/>
+                    <connections>
+                        <action selector="iaPartAmpDecayChanged:" target="22" id="XKA-jp-gQm"/>
+                    </connections>
+                </slider>
+                <slider autoresizesSubviews="NO" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="W9E-BE-8d7" userLabel="Amp ADSR S Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="621" y="227" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" maxValue="1" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="mJL-dX-6a4"/>
+                    <connections>
+                        <action selector="iaPartAmpSustainChanged:" target="22" id="DWZ-MC-xcA"/>
+                    </connections>
+                </slider>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="TLh-0T-etW" userLabel="Amp ADSR R Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="696" y="227" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="pWe-Tj-q45"/>
+                    <connections>
+                        <action selector="iaPartAmpReleaseChanged:" target="22" id="Ei0-0v-kGz"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="emD-K8-EkT" userLabel="Amp Attack">
+                    <rect key="frame" x="491" y="193" width="38" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Attack" id="vMt-mH-D6s">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="OvQ-V9-T0U" userLabel="Amp Decay">
+                    <rect key="frame" x="566" y="193" width="37" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Decay" id="E7O-af-YwN">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="gls-08-tPi" userLabel="Amp Sustain">
+                    <rect key="frame" x="638" y="193" width="45" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Sustain" id="c6n-cf-8zo">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="wPb-EG-erb" userLabel="Amp Release">
+                    <rect key="frame" x="712" y="193" width="46" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Release" id="GOm-ng-0B8">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="jdx-sJ-bAT" userLabel="Amp ADSR A Text Field">
+                    <rect key="frame" x="485" y="207" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="HF3-81-BRb">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartAmpAttackChanged:" target="22" id="KYB-5u-FeF"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="RJ3-3t-igb" userLabel="Amp ADSR D Text Field">
+                    <rect key="frame" x="560" y="207" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="LTY-CC-fTP">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartAmpDecayChanged:" target="22" id="sRz-wU-Nk7"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="HzZ-YB-H4K" userLabel="Amp ADSR S Text Field">
+                    <rect key="frame" x="635" y="207" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="3VJ-BY-TqK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartAmpSustainChanged:" target="22" id="HbO-Lv-WJp"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="xaW-Gd-aJg" userLabel="Amp ADSR R Text Field">
+                    <rect key="frame" x="710" y="207" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="AJx-J7-K4T">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartAmpReleaseChanged:" target="22" id="BMQ-mJ-dXa"/>
+                    </connections>
+                </textField>
+                <customView id="nuZ-ZO-LEx" userLabel="Freq ADSR View" customClass="ADSRView">
+                    <rect key="frame" x="448" y="69" width="351" height="96"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </customView>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="2YO-bY-HGD" userLabel="Freq ADSR A Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="509" y="47" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="0Xu-jg-mzC"/>
+                    <connections>
+                        <action selector="iaPartFreqAttackChanged:" target="22" id="7EJ-25-Nu9"/>
+                    </connections>
+                </slider>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="jL0-bV-QVG" userLabel="Freq ADSR D Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="583" y="47" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="qGR-p7-Zk4"/>
+                    <connections>
+                        <action selector="iaPartFreqDecayChanged:" target="22" id="hg9-2D-O0B"/>
+                    </connections>
+                </slider>
+                <slider autoresizesSubviews="NO" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="sXW-5z-PdQ" userLabel="Freq ADSR S Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="659" y="47" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" maxValue="1" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="jtX-pF-I5h"/>
+                    <connections>
+                        <action selector="iaPartFreqSustainChanged:" target="22" id="wWg-IT-1Fb"/>
+                    </connections>
+                </slider>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="KyU-yu-nqo" userLabel="Freq ADSR R Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="734" y="47" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="0.10000000000000001" maxValue="10000" doubleValue="0.10000000000000001" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="OV5-8L-pe1"/>
+                    <connections>
+                        <action selector="iaPartFreqReleaseChanged:" target="22" id="WQm-mB-Cvh"/>
+                    </connections>
+                </slider>
+                <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" id="p7t-hy-Pkn" userLabel="Freq ADSR Scale Slider" customClass="SynRand_GestureSlider">
+                    <rect key="frame" x="434" y="47" width="78" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" alignment="left" minValue="-96" maxValue="96" tickMarkPosition="below" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Wb7-Pi-ZKa"/>
+                    <connections>
+                        <action selector="iaPartFreqScaleChanged:" target="22" id="Z4V-gM-YUm"/>
+                    </connections>
+                </slider>
+                <textField verticalHuggingPriority="750" id="qu2-gd-P1k" userLabel="Freq Attack">
+                    <rect key="frame" x="529" y="13" width="38" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Attack" id="wi0-kN-wDR">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="Xqy-s1-U0s" userLabel="Freq Decay">
+                    <rect key="frame" x="604" y="13" width="37" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Decay" id="akj-NC-vAq">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="h68-Su-cCi" userLabel="Freq Sustain">
+                    <rect key="frame" x="676" y="13" width="45" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Sustain" id="FZg-1G-P5f">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="wmF-Me-rZt" userLabel="Freq Release">
+                    <rect key="frame" x="750" y="13" width="46" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Release" id="OiT-GE-P6k">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="5T6-PN-kxL" userLabel="Freq Scale">
+                    <rect key="frame" x="456" y="13" width="34" height="14"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Scale" id="pxd-Nm-WV8">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="7Vs-Nr-c12" userLabel="Freq ADSR A Text Field">
+                    <rect key="frame" x="523" y="27" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="cqP-Du-Gse">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqAttackChanged:" target="22" id="Dul-Re-GoI"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="oD6-Uj-bue" userLabel="Freq ADSR D Text Field">
+                    <rect key="frame" x="598" y="27" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="aLP-Uq-msC">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqDecayChanged:" target="22" id="oUQ-1a-f0h"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="kIX-bl-buj" userLabel="Freq ADSR S Text Field">
+                    <rect key="frame" x="673" y="27" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="1qg-NV-hSW">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqSustainChanged:" target="22" id="m6u-Pc-Eb2"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="Tc9-ud-uLB" userLabel="Freq ADSR R Text Field">
+                    <rect key="frame" x="748" y="27" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="SvI-hD-pJV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqReleaseChanged:" target="22" id="hbE-dS-XMi"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="pLu-Jb-s1I" userLabel="Freq ADSR Scale Text Field">
+                    <rect key="frame" x="448" y="27" width="51" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="jx7-hJ-xL2">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="iaPartFreqScaleChanged:" target="22" id="Ffs-16-vHi"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="nM7-bf-Hig" userLabel="Amp Decay">
+                    <rect key="frame" x="573" y="167" width="117" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Frequency ADSR" id="vI6-0T-jhZ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="QTo-hI-b5D" userLabel="Amp Decay">
+                    <rect key="frame" x="573" y="346" width="117" height="17"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Amplitude ADSR" id="0bE-Ug-C3r">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="a3d-fI-vlo">
+                    <rect key="frame" x="440" y="185" width="383" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+            </subviews>
+            <connections>
+                <outlet property="uiAmpADSRView" destination="HdB-aG-0xc" id="VmO-9L-BRl"/>
+                <outlet property="uiAmpAttackField" destination="jdx-sJ-bAT" id="ItL-Qf-IVO"/>
+                <outlet property="uiAmpAttackSlider" destination="QvK-4B-qbj" id="ybr-2A-6BK"/>
+                <outlet property="uiAmpDecayField" destination="RJ3-3t-igb" id="6H3-Pk-xbu"/>
+                <outlet property="uiAmpDecaySlider" destination="b3J-0h-wGd" id="4Fw-wD-Mlx"/>
+                <outlet property="uiAmpReleaseField" destination="xaW-Gd-aJg" id="SKx-60-Dwf"/>
+                <outlet property="uiAmpReleaseSlider" destination="TLh-0T-etW" id="KH6-V8-GEz"/>
+                <outlet property="uiAmpSustainField" destination="HzZ-YB-H4K" id="oy5-Da-Psc"/>
+                <outlet property="uiAmpSustainSlider" destination="W9E-BE-8d7" id="TaD-k7-imo"/>
+                <outlet property="uiFreqADSRView" destination="nuZ-ZO-LEx" id="68j-g4-5TV"/>
+                <outlet property="uiFreqAttackField" destination="7Vs-Nr-c12" id="ACw-YN-AtW"/>
+                <outlet property="uiFreqAttackSlider" destination="2YO-bY-HGD" id="ddA-Xp-621"/>
+                <outlet property="uiFreqDecayField" destination="oD6-Uj-bue" id="2mK-f9-goS"/>
+                <outlet property="uiFreqDecaySlider" destination="jL0-bV-QVG" id="dWQ-iY-4hb"/>
+                <outlet property="uiFreqReleaseField" destination="Tc9-ud-uLB" id="sim-Bm-rqy"/>
+                <outlet property="uiFreqReleaseSlider" destination="KyU-yu-nqo" id="bjt-7w-P2U"/>
+                <outlet property="uiFreqScaleField" destination="pLu-Jb-s1I" id="a77-j8-YMq"/>
+                <outlet property="uiFreqScaleSlider" destination="p7t-hy-Pkn" id="a45-DB-MLC"/>
+                <outlet property="uiFreqSustainField" destination="kIX-bl-buj" id="1qR-ic-mXg"/>
+                <outlet property="uiFreqSustainSlider" destination="sXW-5z-PdQ" id="T2n-Rt-lQ7"/>
+                <outlet property="uiGlobalVolField" destination="25" id="100122"/>
+                <outlet property="uiGlobalVolSlider" destination="23" id="100120"/>
+                <outlet property="uiPartEnabledBtn" destination="100117" id="100127"/>
+                <outlet property="uiPartFreqField" destination="100043" id="100133"/>
+                <outlet property="uiPartFreqSlider" destination="100049" id="100132"/>
+                <outlet property="uiPartLFOFreqField" destination="100095" id="100131"/>
+                <outlet property="uiPartLFOSlider" destination="100096" id="100130"/>
+                <outlet property="uiPartNumLabel" destination="100113" id="100126"/>
+                <outlet property="uiPartSelectCells" destination="100076" id="dD0-zX-kLQ"/>
+                <outlet property="uiPartVolField" destination="100103" id="100129"/>
+                <outlet property="uiPartVolSlider" destination="100104" id="100128"/>
+                <outlet property="uiRandomField" destination="100158" id="100166"/>
+                <outlet property="uiRandomSlider" destination="100156" id="100167"/>
+                <outlet property="uiRandomToggleBtn" destination="vef-Jg-Hk1" id="0ds-1U-tEp"/>
+                <outlet property="uiWaveformList" destination="100143" id="100151"/>
+            </connections>
+            <point key="canvasLocation" x="824.5" y="708.5"/>
+        </customView>
+    </objects>
+</document>

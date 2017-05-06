@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SynRand/SynRand.cpp"
-            timestampString = "511225936.137142"
+            timestampString = "512608759.129914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "squareSound(double pos)"
-            landmarkType = "7">
+            startingLineNumber = "639"
+            endingLineNumber = "639"
+            landmarkName = "TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFrames, AudioBufferList **inBufferList, UInt32 inOutBusCount)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SynRand/SynRand.cpp"
-            timestampString = "511225937.609023"
+            timestampString = "512608759.129914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "sawSound(double pos)"
-            landmarkType = "7">
+            startingLineNumber = "723"
+            endingLineNumber = "723"
+            landmarkName = "TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFrames, AudioBufferList **inBufferList, UInt32 inOutBusCount)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SynRand/SynRand.cpp"
-            timestampString = "511225938.688897"
+            timestampString = "512608759.129914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "triSound(double pos)"
-            landmarkType = "7">
+            startingLineNumber = "568"
+            endingLineNumber = "568"
+            landmarkName = "TestNote::Render(UInt64 inAbsoluteSampleFrame, UInt32 inNumFrames, AudioBufferList **inBufferList, UInt32 inOutBusCount)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

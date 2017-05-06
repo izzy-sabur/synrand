@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA2832771E4D336A0021BDFA /* SynRand.component in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA36723E1E415B3C004B5F75 /* SynRand.component */; };
+		AA2832771E4D336A0021BDFA /* SynRand.component in Copy Files */ = {isa = PBXBuildFile; fileRef = AA36723E1E415B3C004B5F75 /* SynRand.component */; };
 		AA28327C1E4D34570021BDFA /* CAAUMIDIMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA2832781E4D34570021BDFA /* CAAUMIDIMap.cpp */; };
 		AA28327D1E4D34570021BDFA /* CAAUMIDIMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2832791E4D34570021BDFA /* CAAUMIDIMap.h */; };
 		AA28327E1E4D34570021BDFA /* CAAUMIDIMapManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA28327A1E4D34570021BDFA /* CAAUMIDIMapManager.cpp */; };
@@ -90,6 +90,20 @@
 		AA3672E01E415C80004B5F75 /* SynthNoteList.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3672D51E415C80004B5F75 /* SynthNoteList.h */; };
 		AA8CD4F51E5D04DC00FAA162 /* SynRandUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */; };
 		AA8CD4F61E5D04DC00FAA162 /* SynRandUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */; };
+		F4AA412E1EA96C3300FC0B08 /* ADSRView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AA412C1EA96C3300FC0B08 /* ADSRView.h */; };
+		F4AA412F1EA96C3300FC0B08 /* ADSRView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA412D1EA96C3300FC0B08 /* ADSRView.m */; };
+		F4B504C31E9D8FC400F309A6 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B504C11E9D8FC400F309A6 /* CADebugMacros.cpp */; };
+		F4B504C41E9D8FC400F309A6 /* CADebugMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504C21E9D8FC400F309A6 /* CADebugMacros.h */; };
+		F4B504C81E9D907700F309A6 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B504C51E9D907700F309A6 /* CADebugPrintf.cpp */; };
+		F4B504C91E9D907700F309A6 /* CADebugPrintf.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504C61E9D907700F309A6 /* CADebugPrintf.h */; };
+		F4B504CA1E9D907700F309A6 /* CAException.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504C71E9D907700F309A6 /* CAException.h */; };
+		F4B504CE1E9D90D400F309A6 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4B504CC1E9D90D400F309A6 /* CAXException.cpp */; };
+		F4B504CF1E9D90D400F309A6 /* CAXException.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504CD1E9D90D400F309A6 /* CAXException.h */; };
+		F4B504D11E9D90F100F309A6 /* CAAutoDisposer.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504D01E9D90F100F309A6 /* CAAutoDisposer.h */; };
+		F4B504D31E9D910B00F309A6 /* CAMath.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504D21E9D910B00F309A6 /* CAMath.h */; };
+		F4B504D51E9D912800F309A6 /* CAThreadSafeList.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504D41E9D912800F309A6 /* CAThreadSafeList.h */; };
+		F4B504D81E9D914100F309A6 /* CAAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504D61E9D914100F309A6 /* CAAtomic.h */; };
+		F4B504D91E9D914100F309A6 /* CAAtomicStack.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B504D71E9D914100F309A6 /* CAAtomicStack.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,14 +117,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AA2832761E4D33330021BDFA /* CopyFiles */ = {
+		AA2832761E4D33330021BDFA /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "/Users/penguin/Library/Audio/Plug-Ins/Components";
+			dstPath = "~/Library/Audio/Plug-Ins/Components";
 			dstSubfolderSpec = 0;
 			files = (
-				AA2832771E4D336A0021BDFA /* SynRand.component in CopyFiles */,
+				AA2832771E4D336A0021BDFA /* SynRand.component in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -145,15 +160,15 @@
 		AA36725D1E415B3C004B5F75 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		AA36725E1E415B3C004B5F75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		AA3672631E415B3C004B5F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA3672641E415B3C004B5F75 /* SynRand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SynRand.cpp; sourceTree = "<group>"; };
+		AA3672641E415B3C004B5F75 /* SynRand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = SynRand.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		AA3672661E415B3C004B5F75 /* SynRand.exp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.exports; path = SynRand.exp; sourceTree = "<group>"; };
-		AA3672671E415B3C004B5F75 /* SynRand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand.h; sourceTree = "<group>"; };
+		AA3672671E415B3C004B5F75 /* SynRand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SynRand.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		AA3672691E415B3C004B5F75 /* SynRand.r */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.rez; path = SynRand.r; sourceTree = "<group>"; };
 		AA36726B1E415B3C004B5F75 /* SynRandVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRandVersion.h; sourceTree = "<group>"; };
 		AA36726D1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand_CocoaViewFactory.h; sourceTree = "<group>"; };
 		AA36726F1E415B3C004B5F75 /* SynRand_CocoaViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynRand_CocoaViewFactory.m; sourceTree = "<group>"; };
 		AA3672711E415B3C004B5F75 /* SynRand_CocoaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynRand_CocoaView.h; sourceTree = "<group>"; };
-		AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynRand_CocoaView.m; sourceTree = "<group>"; };
+		AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SynRand_CocoaView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AA3672751E415B3C004B5F75 /* SynRand_CocoaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SynRand_CocoaView.xib; sourceTree = "<group>"; };
 		AA3672771E415B3C004B5F75 /* SynRand_CocoaViewFactory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynRand_CocoaViewFactory-Info.plist"; sourceTree = "<group>"; };
 		AA36727A1E415B3C004B5F75 /* AUBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AUBase.cpp; path = CoreAudio/AudioUnits/AUPublic/AUBase/AUBase.cpp; sourceTree = SOURCE_ROOT; };
@@ -200,7 +215,21 @@
 		AA3672D31E415C80004B5F75 /* SynthNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthNote.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNote.h; sourceTree = SOURCE_ROOT; };
 		AA3672D41E415C80004B5F75 /* SynthNoteList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SynthNoteList.cpp; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNoteList.cpp; sourceTree = SOURCE_ROOT; };
 		AA3672D51E415C80004B5F75 /* SynthNoteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthNoteList.h; path = CoreAudio/AudioUnits/AUPublic/AUInstrumentBase/SynthNoteList.h; sourceTree = SOURCE_ROOT; };
-		AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynRandUtil.h; sourceTree = "<group>"; };
+		AA8CD4F41E5D04DC00FAA162 /* SynRandUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SynRandUtil.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F4AA412C1EA96C3300FC0B08 /* ADSRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSRView.h; sourceTree = "<group>"; };
+		F4AA412D1EA96C3300FC0B08 /* ADSRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSRView.m; sourceTree = "<group>"; };
+		F4B504C11E9D8FC400F309A6 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		F4B504C21E9D8FC400F309A6 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		F4B504C51E9D907700F309A6 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		F4B504C61E9D907700F309A6 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		F4B504C71E9D907700F309A6 /* CAException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAException.h; sourceTree = "<group>"; };
+		F4B504CC1E9D90D400F309A6 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		F4B504CD1E9D90D400F309A6 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		F4B504D01E9D90F100F309A6 /* CAAutoDisposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAutoDisposer.h; sourceTree = "<group>"; };
+		F4B504D21E9D910B00F309A6 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		F4B504D41E9D912800F309A6 /* CAThreadSafeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAThreadSafeList.h; sourceTree = "<group>"; };
+		F4B504D61E9D914100F309A6 /* CAAtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAtomic.h; sourceTree = "<group>"; };
+		F4B504D71E9D914100F309A6 /* CAAtomicStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAtomicStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +322,8 @@
 				AA36726B1E415B3C004B5F75 /* SynRandVersion.h */,
 				AA36726D1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h */,
 				AA36726F1E415B3C004B5F75 /* SynRand_CocoaViewFactory.m */,
+				F4AA412C1EA96C3300FC0B08 /* ADSRView.h */,
+				F4AA412D1EA96C3300FC0B08 /* ADSRView.m */,
 				AA3672711E415B3C004B5F75 /* SynRand_CocoaView.h */,
 				AA3672731E415B3C004B5F75 /* SynRand_CocoaView.m */,
 				AA3672751E415B3C004B5F75 /* SynRand_CocoaView.xib */,
@@ -369,6 +400,18 @@
 		AA3672AB1E415B3C004B5F75 /* CoreAudio/PublicUtility */ = {
 			isa = PBXGroup;
 			children = (
+				F4B504D61E9D914100F309A6 /* CAAtomic.h */,
+				F4B504D71E9D914100F309A6 /* CAAtomicStack.h */,
+				F4B504D41E9D912800F309A6 /* CAThreadSafeList.h */,
+				F4B504D21E9D910B00F309A6 /* CAMath.h */,
+				F4B504D01E9D90F100F309A6 /* CAAutoDisposer.h */,
+				F4B504CC1E9D90D400F309A6 /* CAXException.cpp */,
+				F4B504CD1E9D90D400F309A6 /* CAXException.h */,
+				F4B504C51E9D907700F309A6 /* CADebugPrintf.cpp */,
+				F4B504C61E9D907700F309A6 /* CADebugPrintf.h */,
+				F4B504C71E9D907700F309A6 /* CAException.h */,
+				F4B504C11E9D8FC400F309A6 /* CADebugMacros.cpp */,
+				F4B504C21E9D8FC400F309A6 /* CADebugMacros.h */,
 				AA2832961E4D398C0021BDFA /* CABufferList.cpp */,
 				AA2832971E4D398C0021BDFA /* CABufferList.h */,
 				AA2832781E4D34570021BDFA /* CAAUMIDIMap.cpp */,
@@ -429,14 +472,21 @@
 				AA3672D71E415C80004B5F75 /* AUInstrumentBase.h in Headers */,
 				AA3672681E415B3C004B5F75 /* SynRand.h in Headers */,
 				AA3672AF1E415B3C004B5F75 /* CAAudioChannelLayout.h in Headers */,
+				F4B504D91E9D914100F309A6 /* CAAtomicStack.h in Headers */,
 				AA3672D91E415C80004B5F75 /* MIDIControlHandler.h in Headers */,
+				F4B504C91E9D907700F309A6 /* CADebugPrintf.h in Headers */,
 				AA3672BB1E415B3C004B5F75 /* CAStreamBasicDescription.h in Headers */,
+				F4B504D51E9D912800F309A6 /* CAThreadSafeList.h in Headers */,
 				AA3672AA1E415B3C004B5F75 /* AUTimestampGenerator.h in Headers */,
 				AA3672851E415B3C004B5F75 /* AUInputElement.h in Headers */,
+				F4B504CF1E9D90D400F309A6 /* CAXException.h in Headers */,
 				AA3672DC1E415C80004B5F75 /* SynthEvent.h in Headers */,
+				F4B504C41E9D8FC400F309A6 /* CADebugMacros.h in Headers */,
 				AA2832831E4D34A00021BDFA /* CAHostTimeBase.h in Headers */,
 				AA28327D1E4D34570021BDFA /* CAAUMIDIMap.h in Headers */,
 				AA3672E01E415C80004B5F75 /* SynthNoteList.h in Headers */,
+				F4B504D31E9D910B00F309A6 /* CAMath.h in Headers */,
+				F4B504CA1E9D907700F309A6 /* CAException.h in Headers */,
 				AA3672B71E415B3C004B5F75 /* CAMutex.h in Headers */,
 				AA3672A41E415B3C004B5F75 /* AUBuffer.h in Headers */,
 				AA2832911E4D35380021BDFA /* AUMIDIBase.h in Headers */,
@@ -449,6 +499,8 @@
 				AA36726C1E415B3C004B5F75 /* SynRandVersion.h in Headers */,
 				AA3672DB1E415C80004B5F75 /* SynthElement.h in Headers */,
 				AA2832931E4D35380021BDFA /* MusicDeviceBase.h in Headers */,
+				F4B504D81E9D914100F309A6 /* CAAtomic.h in Headers */,
+				F4B504D11E9D90F100F309A6 /* CAAutoDisposer.h in Headers */,
 				AA36728D1E415B3C004B5F75 /* AUPluginDispatch.h in Headers */,
 				AA3672B11E415B3C004B5F75 /* CAAUParameter.h in Headers */,
 				AA3672C11E415B3C004B5F75 /* CAVectorUnitTypes.h in Headers */,
@@ -460,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8CD4F61E5D04DC00FAA162 /* SynRandUtil.h in Headers */,
+				F4AA412E1EA96C3300FC0B08 /* ADSRView.h in Headers */,
 				AA36726E1E415B3C004B5F75 /* SynRand_CocoaViewFactory.h in Headers */,
 				AA3672721E415B3C004B5F75 /* SynRand_CocoaView.h in Headers */,
 			);
@@ -477,7 +530,7 @@
 				AA36723A1E415B3C004B5F75 /* Headers */,
 				AA36723B1E415B3C004B5F75 /* Rez */,
 				AA36723C1E415B3C004B5F75 /* Resources */,
-				AA2832761E4D33330021BDFA /* CopyFiles */,
+				AA2832761E4D33330021BDFA /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -577,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B504C81E9D907700F309A6 /* CADebugPrintf.cpp in Sources */,
 				AA36729E1E415B3C004B5F75 /* AUBaseHelper.cpp in Sources */,
 				AA3672941E415B3C004B5F75 /* ComponentBase.cpp in Sources */,
 				AA36727B1E415B3C004B5F75 /* AUBase.cpp in Sources */,
@@ -588,6 +642,7 @@
 				AA3672DD1E415C80004B5F75 /* SynthNote.cpp in Sources */,
 				AA3672BD1E415B3C004B5F75 /* CAVectorUnit.cpp in Sources */,
 				AA36728B1E415B3C004B5F75 /* AUPluginDispatch.cpp in Sources */,
+				F4B504CE1E9D90D400F309A6 /* CAXException.cpp in Sources */,
 				AA2832901E4D35380021BDFA /* AUMIDIBase.cpp in Sources */,
 				AA28327C1E4D34570021BDFA /* CAAUMIDIMap.cpp in Sources */,
 				AA3672871E415B3C004B5F75 /* AUOutputElement.cpp in Sources */,
@@ -597,6 +652,7 @@
 				AA3672DA1E415C80004B5F75 /* SynthElement.cpp in Sources */,
 				AA3672831E415B3C004B5F75 /* AUInputElement.cpp in Sources */,
 				AA3672B51E415B3C004B5F75 /* CAMutex.cpp in Sources */,
+				F4B504C31E9D8FC400F309A6 /* CADebugMacros.cpp in Sources */,
 				AA3672D61E415C80004B5F75 /* AUInstrumentBase.cpp in Sources */,
 				AA3672B91E415B3C004B5F75 /* CAStreamBasicDescription.cpp in Sources */,
 				AA2832981E4D398C0021BDFA /* CABufferList.cpp in Sources */,
@@ -610,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3672741E415B3C004B5F75 /* SynRand_CocoaView.m in Sources */,
+				F4AA412F1EA96C3300FC0B08 /* ADSRView.m in Sources */,
 				AA3672701E415B3C004B5F75 /* SynRand_CocoaViewFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
