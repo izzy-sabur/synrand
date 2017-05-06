@@ -57,7 +57,7 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SynRand~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #define RES_ID			kAudioUnitResID_SynRand
-#define COMP_TYPE		kAudioUnitType_Effect
+#define COMP_TYPE		kAudioUnitType_MusicDevice
 #define COMP_SUBTYPE	SynRand_COMP_SUBTYPE
 #define COMP_MANUF		SynRand_COMP_MANF	
 
